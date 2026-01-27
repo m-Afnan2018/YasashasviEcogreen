@@ -1,0 +1,347 @@
+/* Portfolio Section Styles */
+.Portfolio {
+    background: #F7F7F7;
+    margin: 0 auto;
+    padding: 6rem 5%;
+}
+
+/* Header Section */
+.header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Section Label */
+.header h5 {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #76b82a;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Main Heading */
+.header h2 {
+    font-size: clamp(2rem, 3.5vw, 2.75rem);
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1.25;
+    margin: 0;
+    letter-spacing: -0.01em;
+}
+
+/* Description */
+.header h6 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #5a5a5a;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 700px;
+}
+
+/* Find Your Solution Button */
+.findSolutionBtn {
+    margin-top: 0.5rem;
+    padding: 0.875rem 2rem;
+    background: transparent;
+    color: #76b82a;
+    border: 2px solid #76b82a;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+}
+
+.findSolutionBtn:hover {
+    background: #76b82a;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(118, 184, 42, 0.25);
+}
+
+/* Products Grid */
+.productsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+/* Product Card */
+.productCard {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.productCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Wrapper */
+.imageWrapper {
+    position: relative;
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    background: #f5f5f5;
+}
+
+.productImage {
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.productCard:hover .productImage {
+    transform: scale(1.08);
+}
+
+/* Card Content */
+.cardContent {
+    padding: 1.75rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+}
+
+.cardContent h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.4;
+    font-family: var(--font-dmsans);
+}
+
+/* Explore Button */
+.exploreBtn {
+    align-self: flex-start;
+    padding: 0;
+    background: transparent;
+    border: none;
+    color: #76b82a;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.exploreBtn:hover {
+    color: #65a020;
+    gap: 0.5rem;
+}
+
+/* Grid Layout Adjustments */
+.productsGrid>.productCard:nth-child(4),
+.productsGrid>.productCard:nth-child(5) {
+    grid-column: span 1;
+}
+
+/* Make the last row centered if only 2 items */
+@media (min-width: 769px) {
+    .productsGrid>.productCard:nth-child(4) {
+        grid-column: 1 / 2;
+    }
+
+    .productsGrid>.productCard:nth-child(5) {
+        grid-column: 2 / 3;
+    }
+
+    /* Center the last row */
+    .productsGrid {
+        grid-template-rows: repeat(2, auto);
+    }
+
+    .productsGrid::after {
+        content: '';
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .Portfolio {
+        padding: 4rem 4%;
+    }
+
+    .productsGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.75rem;
+    }
+
+    .productsGrid>.productCard:nth-child(4),
+    .productsGrid>.productCard:nth-child(5) {
+        grid-column: span 1;
+    }
+
+    .imageWrapper {
+        height: 240px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Portfolio {
+        padding: 3rem 5%;
+    }
+
+    .header {
+        margin-bottom: 3rem;
+    }
+
+    .header h2 {
+        font-size: 1.875rem;
+    }
+
+    .productsGrid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .imageWrapper {
+        height: 220px;
+    }
+
+    .cardContent {
+        padding: 1.5rem 1.25rem;
+    }
+
+    .cardContent h3 {
+        font-size: 1.15rem;
+        min-height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .Portfolio {
+        padding: 2.5rem 4%;
+    }
+
+    .header h5 {
+        font-size: 0.75rem;
+    }
+
+    .header h2 {
+        font-size: 1.625rem;
+    }
+
+    .header h6 {
+        font-size: 0.95rem;
+    }
+
+    .findSolutionBtn {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .imageWrapper {
+        height: 200px;
+    }
+
+    .cardContent {
+        padding: 1.25rem 1rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Apply animations */
+.header {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.productCard {
+    animation: fadeInScale 0.6s ease-out backwards;
+}
+
+.productCard:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.productCard:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.productCard:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.productCard:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.productCard:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+/* Loading skeleton (optional, for better UX) */
+.imageWrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+            #f0f0f0 25%,
+            #e0e0e0 50%,
+            #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    z-index: 1;
+}
+
+.productImage {
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+
+    100% {
+        background-position: 200% 0;
+    }
+}

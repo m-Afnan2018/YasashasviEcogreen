@@ -1,0 +1,300 @@
+/* About Section Styles */
+.About {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding: 6rem 0%;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Left Content Container */
+.About>div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Section Label */
+.About h5 {
+    text-align: left;
+}
+
+/* Main Heading */
+.About h2 {
+    text-align: left;
+}
+
+/* Description Paragraph */
+.About>div>p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Stats and Features Container */
+.About>div>div {
+    display: flex;
+    gap: 3rem;
+    margin-top: 1rem;
+}
+
+/* Stats Section (15+) */
+.About>div>div>div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 140px;
+}
+
+.About>div>div>div:first-child h1 {
+    font-size: clamp(3.5rem, 5vw, 5rem);
+    font-weight: 400;
+    line-height: 1;
+    font-family: var(--font-poppins);
+}
+
+.About>div>div>div:first-child h6 {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #4a4a4a;
+    margin: 0.5rem 0 0 0;
+    line-height: 1.4;
+}
+
+/* Features Container */
+.About>div>div>div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    flex: 1;
+}
+
+/* Individual Feature Item */
+.About>div>div>div:last-child>div {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+/* Feature Icon */
+.About>div>div>div:last-child>div img {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    padding: 0.75rem;
+    background: #f0f8e8;
+    border-radius: 9999px;
+}
+
+/* Feature Text Content */
+.About>div>div>div:last-child>div>div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.About>div>div>div:last-child>div h3 {
+    color: black;
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1;
+    font-family: var(--font-poppins);
+}
+
+/* Explore More Button */
+.About>div>div>div:last-child button {
+    align-self: flex-start;
+    padding: 0.875rem 2rem;
+    background: #76b82a;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+    box-shadow: 0 4px 12px rgba(118, 184, 42, 0.25);
+}
+
+.About>div>div>div:last-child button:hover {
+    background: #65a020;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(118, 184, 42, 0.35);
+}
+
+.About>div>div>div:last-child button::after {
+    content: ' →';
+    margin-left: 0.5rem;
+    transition: margin-left 0.3s ease;
+}
+
+.About>div>div>div:last-child button:hover::after {
+    margin-left: 0.75rem;
+}
+
+/* Right Image */
+.About>img {
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .About {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding: 4rem 4%;
+    }
+
+    .About>img {
+        order: -1;
+        min-height: 400px;
+    }
+
+    .About>div>div {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .About>div>div>div:first-child {
+        min-width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .About {
+        padding: 3rem 5%;
+    }
+
+    .About h2 {
+        font-size: 1.875rem;
+    }
+
+    .About>div>div {
+        gap: 1.5rem;
+    }
+
+    .About>img {
+        min-height: 320px;
+    }
+
+    .About>div>div>div:first-child h1 {
+        font-size: 3rem;
+    }
+
+    .About>div>div>div:last-child>div {
+        gap: 0.875rem;
+    }
+
+    .About>div>div>div:last-child>div img {
+        width: 40px;
+        height: 40px;
+        padding: 0.625rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .About {
+        padding: 2.5rem 4%;
+        gap: 2rem;
+    }
+
+    .About h5 {
+        font-size: 0.75rem;
+    }
+
+    .About h2 {
+        font-size: 1.625rem;
+    }
+
+    .About>div>p {
+        font-size: 0.95rem;
+    }
+
+    .About>img {
+        min-height: 280px;
+        border-radius: 8px;
+    }
+
+    .About>div>div>div:last-child button {
+        width: 100%;
+        padding: 0.875rem 1.5rem;
+    }
+}
+
+/* Smooth animations on scroll */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animations when in viewport (you can add intersection observer in JS) */
+.About>div:first-child {
+    animation: fadeInLeft 0.8s ease-out;
+}
+
+.About>img {
+    animation: fadeInRight 0.8s ease-out;
+}
+
+.About h5,
+.About h2,
+.About>div>p {
+    animation: fadeInUp 0.6s ease-out backwards;
+}
+
+.About h5 {
+    animation-delay: 0.1s;
+}
+
+.About h2 {
+    animation-delay: 0.2s;
+}
+
+.About>div>p {
+    animation-delay: 0.3s;
+}
+
+.About>div>div {
+    animation: fadeInUp 0.6s ease-out 0.4s backwards;
+}
