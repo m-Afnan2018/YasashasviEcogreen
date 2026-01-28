@@ -49,7 +49,7 @@
 }
 
 .nav-link:hover {
-    color: #0B740B;
+    color: #76b82a;
 }
 
 .nav-link.active:hover::after {
@@ -59,12 +59,12 @@
     left: 0;
     width: 100%;
     height: 2px;
-    background: #0B740B;
+    background: #76b82a;
 }
 
 /* Active link */
 .nav-link.active {
-    color: #0B740B;
+    color: #76b82a;
 }
 
 .nav-link.active::after {
@@ -74,14 +74,14 @@
     left: 0;
     width: 100%;
     height: 2px;
-    background: #0B740B;
+    background: #76b82a;
 }
 
 /* CTA */
 .cta-btn {
     font-family: var(--font-pilat);
     text-transform: uppercase;
-    background: #0B740B;
+    background: #76b82a;
     color: #fff;
     padding: 0.6rem 1.2rem;
     font-size: 0.85rem;
@@ -114,7 +114,7 @@
 .hamburger span {
     width: 25px;
     height: 3px;
-    background: #0B740B;
+    background: #76b82a;
     transition: all 0.3s ease;
     border-radius: 2px;
 }
