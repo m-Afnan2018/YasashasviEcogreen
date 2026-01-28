@@ -1,5 +1,5 @@
 .footer {
-    background: #1a2b2e;
+    background: #141B1F;
     color: white;
     padding-top: 80px;
 }
@@ -66,9 +66,6 @@
     box-shadow: 0 4px 12px rgba(124, 179, 66, 0.4);
 }
 
-/* Links Sections */
-.linksSection {}
-
 .sectionTitle {
     color: #fff;
     letter-spacing: .5px;
@@ -104,8 +101,6 @@
     padding-left: 5px;
 }
 
-/* Contact Section */
-.contactSection {}
 
 .contactItems {
     display: flex;
@@ -116,7 +111,7 @@
 
 .contactItem {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 12px;
     font-family: var(--font-dmsans);
 }

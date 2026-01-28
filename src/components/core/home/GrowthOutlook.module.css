@@ -1,7 +1,7 @@
 .growthSection {
     position: relative;
     background-size: cover;
-    background-position: top;
+    background-position: top right;
     background-repeat: no-repeat;
     padding: 100px 20px;
     min-height: 700px;

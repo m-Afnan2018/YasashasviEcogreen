@@ -2,14 +2,18 @@
 
 import { useState, useEffect } from 'react';
 import styles from './Testimonials.module.css';
+import abigail from '@/assets/images/avatars/abigail.png'
+import elizabeth from '@/assets/images/avatars/elizabeth.png'
+import anthony from '@/assets/images/avatars/anthony.png'
 import testimonialBackground from '@/assets/images/home/testimonial-background.jpg'
 import supportBg from '@/assets/images/home/support-bg.jpg'
+import { StaticImageData } from 'next/image';
 
 interface Testimonial {
     id: number;
     name: string;
     role: string;
-    avatar: string;
+    avatar: StaticImageData;
     quote: string;
     rating: number;
 }
@@ -19,7 +23,7 @@ const testimonials: Testimonial[] = [
         id: 1,
         name: 'Abigail',
         role: 'Engineer',
-        avatar: '/avatars/abigail.jpg',
+        avatar: abigail,
         quote: 'A reliable trading partner delivering transparent, compliant, and innovative supply chain solutions.',
         rating: 5
     },
@@ -27,7 +31,7 @@ const testimonials: Testimonial[] = [
         id: 2,
         name: 'Elizabeth',
         role: 'Architecture',
-        avatar: '/avatars/elizabeth.jpg',
+        avatar: elizabeth,
         quote: 'Highly professional, structuring-backed supply, clear documentation and dependable execution.',
         rating: 4
     },
@@ -35,7 +39,7 @@ const testimonials: Testimonial[] = [
         id: 3,
         name: 'Anthony',
         role: 'Industrial',
-        avatar: '/avatars/anthony.jpg',
+        avatar: anthony,
         quote: 'Yashashvi Ecogreen simplifies global trade with professionalism and integrity.',
         rating: 5
     }
@@ -99,7 +103,7 @@ export default function TestimonialSection() {
                             <div className={styles.cardContent}>
                                 <div className={styles.profileSection}>
                                     <div className={styles.avatar}>
-                                        <img src={testimonial.avatar} alt={testimonial.name} />
+                                        <img src={testimonial.avatar.src} alt={testimonial.name} />
                                     </div>
                                     <div className={styles.profileInfo}>
                                         <h3 className={styles.name}>{testimonial.name}</h3>
