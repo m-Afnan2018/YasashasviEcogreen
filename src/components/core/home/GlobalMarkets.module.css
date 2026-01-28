@@ -219,18 +219,18 @@
 
 /* Marker Positions - Adjust these based on your map */
 .marker[data-location="middle-east"] {
-    top: 35%;
-    left: 52%;
+    top: 36%;
+    left: 24%;
 }
 
 .marker[data-location="asia"] {
-    top: 32%;
-    right: 18%;
+    top: 40%;
+    right: 23%;
 }
 
 .marker[data-location="africa"] {
-    bottom: 35%;
-    left: 48%;
+    top: 62%;
+    left: 34%;
 }
 
 .marker[data-location="international"] {
