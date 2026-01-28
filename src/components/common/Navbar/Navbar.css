@@ -25,6 +25,8 @@
 
 .logo img {
     width: 250px;
+    height: 50px;
+    object-fit: cover;
 }
 
 /* Nav links */
@@ -49,6 +51,7 @@
 .nav-link:hover {
     color: #0B740B;
 }
+
 .nav-link.active:hover::after {
     content: "";
     position: absolute;

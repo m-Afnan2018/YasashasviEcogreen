@@ -1,0 +1,290 @@
+.footer {
+    background: #1a2b2e;
+    color: white;
+    padding-top: 80px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footerGrid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.2fr 1.3fr;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+/* Company Section */
+.companySection {
+    padding-right: 20px;
+}
+
+.logoContainer {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: auto;
+    height: 100px;
+    width: 200px;
+    object-fit: cover;
+    filter: contrast(0) brightness(1.5);
+}
+
+.companyDescription {
+    font-size: 14px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 24px;
+}
+
+.socialLinks {
+    display: flex;
+    gap: 10px;
+}
+
+.socialLink {
+    width: 40px;
+    height: 40px;
+    background: #7cb342;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.socialLink:hover {
+    background: #8bc34a;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(124, 179, 66, 0.4);
+}
+
+/* Links Sections */
+.linksSection {}
+
+.sectionTitle {
+    color: #fff;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: var(--font-poppins);
+    border-bottom: 3px solid #669f24;
+    width: fit-content;
+    padding-bottom: 0.5rem;
+}
+
+.linksList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.linksList li {
+    margin-bottom: 12px;
+}
+
+.link {
+    font-size: 1rem;
+    transition: color .3s, padding-left .3s;
+    font-family: var(--font-dmsans);
+    text-transform: capitalize;
+}
+
+.link:hover {
+    color: #8bc34a;
+    padding-left: 5px;
+}
+
+/* Contact Section */
+.contactSection {}
+
+.contactItems {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: var(--font-dmsans);
+}
+
+.contactItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-family: var(--font-dmsans);
+}
+
+.iconBox {
+    width: 40px;
+    height: 40px;
+    background: #7cb342;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: white;
+    font-size: 16px;
+}
+
+.contactText {
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    padding-top: 4px;
+}
+
+.contactLink {
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    padding-top: 4px;
+    transition: color 0.3s ease;
+}
+
+.contactLink:hover {
+    color: #8bc34a;
+}
+
+/* Footer Bottom */
+.footerBottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 24px 0;
+}
+
+.bottomContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+}
+
+.designCredit {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+}
+
+.designLink {
+    color: #8bc34a;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.designLink:hover {
+    color: #9ccc65;
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .footerGrid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .companySection {
+        grid-column: span 2;
+        padding-right: 0;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding-top: 60px;
+    }
+
+    .footerGrid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+
+    .companySection {
+        grid-column: span 1;
+        max-width: 100%;
+    }
+
+    .bottomContent {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .socialLinks {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding-top: 50px;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .footerGrid {
+        gap: 35px;
+    }
+
+    .logo {
+        height: 45px;
+    }
+
+    .companyDescription {
+        font-size: 13px;
+    }
+
+    .socialLink {
+        width: 38px;
+        height: 38px;
+        font-size: 15px;
+    }
+
+    .sectionTitle {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    .link,
+    .contactText,
+    .contactLink {
+        font-size: 13px;
+    }
+
+    .iconBox {
+        width: 38px;
+        height: 38px;
+        font-size: 15px;
+    }
+
+    .contactItems {
+        gap: 16px;
+    }
+
+    .copyright,
+    .designCredit {
+        font-size: 12px;
+    }
+
+    .footerBottom {
+        padding: 20px 0;
+    }
+}

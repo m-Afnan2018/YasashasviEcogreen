@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import { Inter, Poppins } from 'next/font/google';
 import "./globals.css";
 import Navbar from "@/components/common/Navbar/Navbar";
+import Footer from "@/components/common/Footer/Footer";
 
 
 const poppins = Poppins({
@@ -71,6 +72,7 @@ export default function RootLayout({
             <body className={`${reyork.variable} ${pilatWide.variable} ${poppins.variable} ${dmSans.variable}`}>
                 <Navbar />
                 {children}
+                <Footer />
             </body>
         </html >
     );
