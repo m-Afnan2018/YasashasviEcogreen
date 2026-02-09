@@ -1,0 +1,397 @@
+.testimonialSection {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 64px;
+}
+
+/* Header Styles */
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 16px;
+    letter-spacing: -0.5px;
+}
+
+.subtitle {
+    font-size: 15px;
+    color: #4a4a4a;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Testimonial Grid */
+.testimonialGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.testimonialCard {
+    background: white;
+    border-radius: 8px;
+    padding: 30px 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonialCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.quoteIcon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 48px;
+    color: #8bc34a;
+    opacity: 0.3;
+    font-family: Georgia, serif;
+    line-height: 1;
+}
+
+.cardContent {
+    position: relative;
+    z-index: 1;
+}
+
+/* Profile Section */
+.profileSection {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    background: #e0e0e0;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileInfo {
+    flex: 1;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0 0 4px 0;
+}
+
+.role {
+    font-size: 13px;
+    color: #666;
+    margin: 0;
+}
+
+/* Quote */
+.quote {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+    min-height: 80px;
+}
+
+/* Rating */
+.rating {
+    display: flex;
+    gap: 4px;
+}
+
+.starFilled {
+    color: #8bc34a;
+    font-size: 16px;
+}
+
+.starEmpty {
+    color: #d0d0d0;
+    font-size: 16px;
+}
+
+/* Slider Dots */
+.sliderDots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 40px;
+}
+
+.dot {
+    width: 40px;
+    height: 3px;
+    background: #d0d0d0;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.dot:hover {
+    background: #a0a0a0;
+}
+
+.dotActive {
+    background: #8bc34a;
+    width: 50px;
+}
+
+/* CTA Section */
+.ctaSection {
+    padding: 80px 20px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.ctaSection::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(118, 184, 42, 0.92) 0%, rgba(100, 160, 35, 0.92) 100%);
+    z-index: 1;
+}
+
+.ctaContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+}
+
+.ctaTitle {
+    color: white;
+    text-align: left;
+}
+
+.ctaSubtitle {
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 16px;
+    max-width: 700px;
+}
+
+.ctaButtons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.btnPrimary,
+.btnSecondary {
+    padding: 16px 36px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.btnPrimary {
+    background: #1a1a1a;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btnPrimary:hover {
+    background: #2a2a2a;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+.btnPrimary:active {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btnSecondary {
+    background: transparent;
+    color: #1a1a1a;
+    border: 2px solid #1a1a1a;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btnSecondary:hover {
+    background: #1a1a1a;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.btnSecondary:active {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    .ctaContainer {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .testimonialGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .testimonialCard:last-child {
+        grid-column: span 2;
+        max-width: 550px;
+        margin: 0 auto;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonialSection {
+        padding-top: 50px;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .header {
+        margin-bottom: 40px;
+    }
+
+    .title {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .testimonialGrid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .testimonialCard:last-child {
+        grid-column: span 1;
+        max-width: 100%;
+    }
+
+    .quote {
+        min-height: auto;
+        font-size: 13px;
+    }
+
+    .ctaSection {
+        padding: 50px 20px;
+    }
+
+    .ctaContainer {
+        padding: 0;
+    }
+
+    .ctaButtons {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .btnPrimary,
+    .btnSecondary {
+        width: 100%;
+        padding: 14px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonialSection {
+        padding-top: 40px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+    }
+
+    .testimonialCard {
+        padding: 24px 20px;
+    }
+
+    .quoteIcon {
+        font-size: 36px;
+        top: 15px;
+        left: 15px;
+    }
+
+    .profileSection {
+        gap: 10px;
+    }
+
+    .avatar {
+        width: 45px;
+        height: 45px;
+    }
+
+    .name {
+        font-size: 15px;
+    }
+
+    .role {
+        font-size: 12px;
+    }
+
+    .ctaSection {
+        padding: 40px 16px;
+    }
+
+    .btnPrimary,
+    .btnSecondary {
+        padding: 13px 20px;
+        font-size: 12px;
+    }
+}

@@ -57,3 +57,7 @@ p {
     vertical-align: middle;
     color: #555855;
 }
+
+button{
+    font-family: var(--font-pilat);
+}

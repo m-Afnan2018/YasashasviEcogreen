@@ -1,0 +1,97 @@
+[
+  {
+    "name": "Sodium Hexafluoroaluminate ( Cryolite )",
+    "description": "Cryolite (Na₃AlF₆), also known as sodium hexafluoroaluminate, is a critical industrial mineral and chemical compound composed of sodium, aluminum, and fluorine. Once mined exclusively in Greenland until 1987, cryolite is now produced synthetically through industrial processes, maintaining identical chemical composition and performance to natural reserves.",
+    "why": "Why Cryolite Matters",
+    "whyDescripiton": "Cryolite is indispensable to the Hall–Héroult process, the global standard for aluminum production since 1886. Without cryolite, extracting aluminum from its ore would be economically unfeasible. By dissolving alumina (Al₂O₃) and reducing its effective melting point from over 2,000°C to approximately 950°C, cryolite enables cost-effective ",
+    "characteristics": "Physical Characteristics",
+    "characteristicsPoints": [
+      "Non-toxic and environmentally safe in industrial handling",
+      "Highly soluble in molten alumina",
+      "Forms protective layers at high temperatures",
+      "Excellent thermal stability"
+    ],
+    "poperties": [
+      {
+        "name": "Chemical Formula",
+        "answer": "Na₃AlF₆"
+      },
+      {
+        "name": "Molecular Weight",
+        "answer": "209.94 g/mol"
+      },
+      {
+        "name": "Appearance",
+        "answer": "White to colorless, glassy crystals or powder"
+      },
+      {
+        "name": "Crystal System",
+        "answer": "Monoclinic with pseudocubic aspect"
+      },
+      {
+        "name": "Melting Point",
+        "answer": " 1,291°C"
+      },
+      {
+        "name": "Density",
+        "answer": "2.95–3.0 g/cm³"
+      },
+      {
+        "name": "Refractive Index",
+        "answer": "~1.34 (nearly identical to water; crystalline form becomes nearly invisible when submerged in water)"
+      },
+      {
+        "name": "Hardness",
+        "answer": "2.5–3 on the Mohs scale (soft, easily powdered)"
+      }
+    ],
+    "glance": [
+      {
+        "title": "",
+        "heading": "",
+        "description": "",
+        "mainPoints": [
+          {
+            "heading": "",
+            "points": [""]
+          },
+          {
+            "heading": "",
+            "points": [""]
+          },
+          {
+            "heading": "",
+            "points": [""]
+          }
+        ]
+      }
+    ],
+    "questions": {
+      "question": "",
+      "answer": ""
+    },
+    "advantages": [
+      {
+        "heading": "",
+        "description": ""
+      },
+      {
+        "heading": "",
+        "description": ""
+      }
+    ],
+    "greenSection": {
+      "heading": "",
+      "subHeading": "",
+      "points": [""],
+      "postPoints": ""
+    },
+    "information": [
+      {
+        "heading": "",
+        "description": "",
+        "image": ""
+      }
+    ]
+  }
+]

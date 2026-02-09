@@ -35,6 +35,6 @@ export function About() {
                 </div>
             </div>
         </div>
-        <Image width={'500'} height={'500'}   src={aboutImage.src} alt='aboutImage' />
+        <Image width={'500'} height={'500'} src={aboutImage.src} alt='aboutImage' />
     </section>
 }

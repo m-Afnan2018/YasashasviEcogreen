@@ -1,23 +1,38 @@
-import styles from './Hero.module.css'
-import heroImage from '@/assets/images/home/hero-image.jpg'
+import styles from './Hero.module.css';
+import hero from '@/assets/images/home/hero-image.jpg'
 
-export function Hero() {
-    return <section className={styles.Hero} style={{ background: `url(${heroImage.src})` }}>
-        <h2>Global Trading Partner for Metallurgical & Industrial Products</h2>
-        <h4>Import • Export • Trade • Supply Coordination <br/>
-            UAE-Based | Serving Global Industrial Markets
-        </h4>
-        <h4>Yashashvi Ecogreen L.L.C is a UAE-based trading company specializing in the global import
-            and export of industrial and metallurgical materials, supporting aluminium, steel, mining,
-            and allied manufacturing industries across international markets.
-        </h4>
+export default function Hero() {
+    return (
+        <section className={styles.hero} style={{ backgroundImage: `url(${hero.src})` }}>
+            <div className={styles.overlay} />
 
-        <button className={`${styles.navigationButtons} ${styles.left}`}>Previous</button>
-        <button className={`${styles.navigationButtons} ${styles.right}`}>Next</button>
+            <div className={styles.content}>
+                <div className={styles.left}>
+                    <h2>Transforming Industrial Waste into High-Value Resources</h2>
 
-        <div>
-            <button>Explore Our Products</button>
-            <button>Contact Our Trade Desk</button>
-        </div>
-    </section>
+                    <p className={styles.subheading}>Global Recycler & Processor of Metallurgical and Industrial Materials</p>
+
+                    <p className={styles.description}>
+                        Yashashvi Ecogreen L.L.C is a UAE-based recycling and processing company
+                        specializing in converting industrial waste and secondary raw materials
+                        into reusable, high-performance products for aluminium, steel, mining,
+                        and manufacturing industries worldwide.
+                    </p>
+
+                </div>
+
+                <div className={styles.actions}>
+                    <button className={styles.primaryBtn}>
+                        Explore what we do
+                        <span>→</span>
+                    </button>
+
+                    <button className={styles.secondaryBtn}>
+                        Get in Touch
+                        <span>→</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    );
 }
