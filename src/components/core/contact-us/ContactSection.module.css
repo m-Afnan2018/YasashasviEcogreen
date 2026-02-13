@@ -1,0 +1,71 @@
+.wrapper {
+    display: flex;
+    gap: 60px;
+    padding: 80px 10%;
+    background: #f5f5f5;
+}
+
+.left {
+    flex: 1;
+}
+
+.left h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.left p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.info {
+    margin-top: 20px;
+}
+
+.form {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.form input,
+.form textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.form textarea {
+    grid-column: span 2;
+}
+
+.form button {
+    grid-column: span 2;
+    padding: 12px;
+    background: #6fb64d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.form button:hover {
+    background: #5aa63c;
+}
+
+@media (max-width: 992px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .form {
+        grid-template-columns: 1fr;
+    }
+
+    .form textarea,
+    .form button {
+        grid-column: span 1;
+    }
+}

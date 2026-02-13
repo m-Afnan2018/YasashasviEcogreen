@@ -1,0 +1,242 @@
+.qualitySection {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+    /* background-image: url('/mnt/user-data/uploads/1770787049532_image.png'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px;
+}
+
+.overlay {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.75) 0%,
+            rgba(0, 0, 0, 0.65) 50%,
+            rgba(0, 0, 0, 0.75) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.container {
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+    padding: 40px;
+    z-index: 1;
+    text-align: center;
+}
+
+.title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 16px 0;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 16px;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.95);
+    margin: 0 0 60px 0;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.featuresGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 40px;
+    margin-bottom: 60px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.iconWrapper {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    padding: 12px;
+    transition: all 0.3s ease;
+}
+
+.feature:hover .iconWrapper {
+    background: rgba(255, 255, 255, 0.15);
+    transform: scale(1.1);
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+.featureTitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.4;
+    max-width: 200px;
+}
+
+.objective {
+    font-size: 17px;
+    font-style: italic;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.6;
+    font-weight: 400;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    .qualitySection {
+        padding: 60px 20px;
+    }
+
+    .container {
+        padding: 0 32px;
+    }
+
+    .title {
+        font-size: 36px;
+        letter-spacing: 1.5px;
+    }
+
+    .subtitle {
+        font-size: 15px;
+        margin-bottom: 50px;
+    }
+
+    .featuresGrid {
+        gap: 40px 30px;
+    }
+
+    .iconWrapper {
+        width: 70px;
+        height: 70px;
+    }
+
+    .featureTitle {
+        font-size: 15px;
+    }
+
+    .objective {
+        font-size: 16px;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .qualitySection {
+        padding: 50px 20px;
+        min-height: 500px;
+    }
+
+    .container {
+        padding: 0 24px;
+    }
+
+    .title {
+        font-size: 28px;
+        letter-spacing: 1px;
+        margin-bottom: 12px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+
+    .featuresGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px 25px;
+    }
+
+    .iconWrapper {
+        width: 65px;
+        height: 65px;
+    }
+
+    .featureTitle {
+        font-size: 14px;
+        max-width: 160px;
+    }
+
+    .objective {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+    .qualitySection {
+        padding: 40px 16px;
+        min-height: 450px;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .title {
+        font-size: 24px;
+        letter-spacing: 0.5px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+        margin-bottom: 35px;
+    }
+
+    .featuresGrid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        max-width: 300px;
+    }
+
+    .iconWrapper {
+        width: 60px;
+        height: 60px;
+    }
+
+    .featureTitle {
+        font-size: 13px;
+        max-width: 200px;
+    }
+
+    .objective {
+        font-size: 14px;
+    }
+}

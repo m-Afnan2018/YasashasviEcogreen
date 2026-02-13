@@ -47,7 +47,7 @@
     object-fit: contain;
     position: absolute;
     height: 100%;
-    /* width: 100%; */
+    width: auto !important;
     inset: 0px;
 }
 

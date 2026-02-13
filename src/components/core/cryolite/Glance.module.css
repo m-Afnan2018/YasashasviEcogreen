@@ -1,0 +1,287 @@
+.glanceSection {
+    background: #0a0a0a;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Tabs */
+.tabs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+}
+
+.tab {
+    background: #1a1a1a;
+    border: none;
+    padding: 24px 32px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+    position: relative;
+    color: white;
+}
+
+.tab:hover {
+    background: #252525;
+}
+
+.tabActive {
+    background: #7cb342 !important;
+    border-bottom-color: #6a9e38;
+}
+
+.tabIcon {
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.tabText {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 1.3;
+}
+
+/* Content Area */
+.contentArea {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    min-height: 600px;
+    margin: 5rem 0;
+}
+
+/* Left Content */
+.leftContent {
+    background: #0a0a0a;
+    padding: 0px 80px 60px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.category {
+    color: #7cb342;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: var(--font-dmsans);
+}
+
+.title {
+    font-size: 42px;
+    font-weight: 300;
+    text-align: left;
+    color: white;
+    line-height: 1.2;
+    margin-bottom: 24px;
+    letter-spacing: -0.5px;
+}
+
+.prepoints {
+    font-size: 15px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 24px;
+}
+
+.pointsList {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.point {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.bullet {
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 8px;
+}
+
+.pointText {
+    color: #CCD1CF;
+    font-size: 15px;
+    line-height: 1.7;
+    font-weight: 400;
+    font-family: var(--font-dmsans);
+}
+
+.description {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #CCD1CF;
+    margin-top: 8px;
+}
+
+/* Right Image */
+.rightContent {
+    position: relative;
+    background: #1a1a1a;
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .leftContent {
+        padding: 50px 60px 50px 50px;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .tabs {
+        grid-template-columns: 1fr;
+    }
+
+    .tab {
+        padding: 20px 30px;
+        justify-content: flex-start;
+    }
+
+    .tabText {
+        font-size: 15px;
+    }
+
+    .contentArea {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        margin: 2rem 0;
+    }
+
+    .leftContent {
+        padding: 50px 40px;
+    }
+
+    .rightContent {
+        min-height: 400px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tab {
+        padding: 18px 24px;
+    }
+
+    .tabIcon {
+        font-size: 20px;
+    }
+
+    .tabText {
+        font-size: 14px;
+    }
+
+    .leftContent {
+        padding: 40px 30px;
+    }
+
+    .category {
+        font-size: 11px;
+        margin-bottom: 16px;
+    }
+
+    .title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .prepoints,
+    .pointText,
+    .description {
+        font-size: 14px;
+    }
+
+    .pointsList {
+        gap: 12px;
+    }
+
+    .rightContent {
+        min-height: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tab {
+        padding: 16px 20px;
+        gap: 10px;
+    }
+
+    .tabIcon {
+        font-size: 18px;
+    }
+
+    .tabText {
+        font-size: 13px;
+    }
+
+    .leftContent {
+        padding: 35px 20px;
+    }
+
+    .category {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .title {
+        font-size: 24px;
+        line-height: 1.3;
+    }
+
+    .prepoints,
+    .pointText,
+    .description {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .bullet {
+        width: 7px;
+        height: 7px;
+        margin-top: 7px;
+    }
+
+    .point {
+        gap: 12px;
+    }
+
+    .rightContent {
+        min-height: 300px;
+    }
+}

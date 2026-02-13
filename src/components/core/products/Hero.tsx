@@ -1,5 +1,5 @@
 import styles from './Hero.module.css';
-import hero from '@/assets/images/home/hero-image.jpg'
+import hero from '@/assets/images/products/hero-image.png'
 
 export default function Hero() {
     return (
@@ -8,12 +8,12 @@ export default function Hero() {
 
             <div className={styles.content}>
                 <div className={styles.left}>
-                    <h2>Supporting Circular Resource Utilization</h2>
+                    <h2>Recycled Materials for Circular Industrial Use</h2>
 
                     <p className={styles.subheading}>Global Recycler & Processor of Metallurgical and Industrial Materials</p>
 
                     <p className={styles.description}>
-                        We work across industrial ecosystems to promote recycled materials, responsible processing, and sustainable material use.
+                        Supplying secondary and recycled industrial materials that support sustainable manufacturing and responsible resource utilization.
                     </p>
 
                 </div>
