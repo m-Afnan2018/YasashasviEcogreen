@@ -1,0 +1,124 @@
+[
+    {
+        "id": "automotive",
+        "label": "Automotive",
+        "title": "Automotive Manufacturing (Precision Grade)",
+        "image": "/images/applications/automotive.jpg",
+        "imageAlt": "Automotive precision components",
+        "points": [
+            "Body panels including doors, roofs, hoods, fenders, and trunk lids",
+            "Exterior structural components requiring precise dimensional accuracy",
+            "Interior structural panels and reinforcement sections",
+            "EV body structures supporting lightweight vehicle design",
+            "Why Cold-Rolled Steel: Smooth surface finish ensures superior paint quality and visual appearance while maintaining structural strength"
+        ]
+    },
+    {
+        "id": "appliances",
+        "label": "Appliances",
+        "title": "Appliance Manufacturing",
+        "image": "/images/applications/appliances.jpg",
+        "imageAlt": "Home appliance components",
+        "points": [
+            "Refrigerator outer bodies and internal frames ",
+            "Washing machine structural frames and external panels ",
+            "Dishwasher exterior housings and protective covers ",
+            "Microwave and kitchen appliance enclosures ",
+            "Why Cold-Rolled Steel: Premium surface finish supports coating durability and corrosion protection while maintaining dimensional consistency"
+        ]
+    },
+    {
+        "id": "hvac",
+        "label": "HVAC Systems",
+        "title": "HVAC Systems (Industrial Grade)",
+        "image": "/images/applications/hvac.jpg",
+        "imageAlt": "HVAC ductwork and systems",
+        "points": [
+            "Heating and cooling unit housings Industrial ductwork and ventilation components ",
+            "Filter frames and air handling system enclosures ",
+            "Precision sheet metal parts used in climate control systems ",
+            "Why Cold-Rolled Steel: High formability enables accurate shaping and improved equipment durability"
+        ]
+    },
+    {
+        "id": "office-furniture",
+        "label": "Office Furniture",
+        "title": "Office & Storage Furniture Manufacturing",
+        "image": "/images/applications/office-furniture.jpg",
+        "imageAlt": "Office furniture steel frames",
+        "points": [
+            "Desk structural frames and metal bases Filing cabinet bodies and drawer structures ",
+            "Storage shelving and workstation components ",
+            "Modular furniture metal frameworks ",
+            "Why Cold-Rolled Steel: Smooth finish improves coating adhesion and provides premium aesthetic quality"
+        ]
+    },
+    {
+        "id": "metal-packaging",
+        "label": "Metal Packaging",
+        "title": "Industrial & Consumer Packaging",
+        "image": "/images/applications/metal-packaging.jpg",
+        "imageAlt": "Metal cans and packaging",
+        "points": [
+            "Paint cans and chemical storage containers ",
+            "Industrial storage boxes and protective enclosures ",
+            "Metal packaging requiring printing or coating applications ",
+            "Lightweight storage containers for industrial materials ",
+            "Why Cold-Rolled Steel: Clean surface enables high-quality printing and coating adhesion"
+        ]
+    },
+    {
+        "id": "machinery",
+        "label": "Machinery & Equipment",
+        "title": "Machinery & Industrial Equipment",
+        "image": "/images/applications/machinery.jpg",
+        "imageAlt": "Industrial machinery components",
+        "points": [
+            "Precision machinery outer housings Control cabinet and electrical enclosure structures ",
+            "Machine protective guards and structural covers ",
+            "Fabricated industrial machine components ",
+            "Why Cold-Rolled Steel: Uniform microstructure ensures high machinability and production precision"
+        ]
+    },
+    {
+        "id": "construction",
+        "label": "Construction",
+        "title": "Interior Construction & Architectural Applications",
+        "image": "/images/applications/construction.jpg",
+        "imageAlt": "Steel construction materials",
+        "points": [
+            "Interior wall cladding and partition panels ",
+            "Decorative architectural metal panels ",
+            "Lightweight structural framing components Building interior finishing materials ",
+            "Why Cold-Rolled Steel: Superior surface quality supports decorative finishes and long-term durability"
+        ]
+    },
+    {
+        "id": "electrical",
+        "label": "Electrical Equipment",
+        "title": "Electrical & Power Distribution Equipment",
+        "image": "/images/applications/construction.jpg",
+        "imageAlt": "Electrical Equipment",
+        "points": [
+            "Transformer tanks and protective enclosures ",
+            "Switchgear cabinets and distribution boards ",
+            "Electrical panel housing structures ",
+            "Industrial control panel frameworks ",
+            "Why Cold-Rolled Steel: Provides dimensional precision required for electrical assembly accuracy"
+        ]
+    },
+    {
+        "id": "consumer",
+        "label": "Consumer Products",
+        "title": "Consumer & Household Products",
+        "image": "/images/applications/construction.jpg",
+        "imageAlt": "Consumer Products",
+        "points": [
+            "Kitchen appliance outer bodies",
+            "Toolboxes and storage containers",
+            "Home utility product enclosures",
+            "Durable household equipment structures",
+            "Why Cold-Rolled Steel: Attractive finish and lightweight strength support consumer product design"
+        ]
+    }
+]

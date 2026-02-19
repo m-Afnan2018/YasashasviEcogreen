@@ -24,7 +24,7 @@ const testimonials: Testimonial[] = [
         name: 'Abigail',
         role: 'Engineer',
         avatar: abigail,
-        quote: 'A reliable trading partner delivering transparent, compliant, and innovative supply chain solutions.',
+        quote: 'A reliable trading partner delivering transparent, compliant, and consistent global trade solutions.',
         rating: 5
     },
     {
@@ -32,7 +32,7 @@ const testimonials: Testimonial[] = [
         name: 'Elizabeth',
         role: 'Architecture',
         avatar: elizabeth,
-        quote: 'Highly professional, structuring-backed supply, clear documentation and dependable execution.',
+        quote: 'Trusted for manufacturing-backed supply, clear documentation, and dependable execution.',
         rating: 4
     },
     {

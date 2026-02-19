@@ -1,156 +1,159 @@
 .advantagesSection {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 80px 40px;
-    background-color: #fafafa;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  background-color: white;
 }
 
 .title {
-    font-size: 36px;
-    font-weight: 600;
-    color: #2a2a2a;
-    text-align: center;
-    margin: 0 0 70px 0;
-    line-height: 1.3;
+  font-size: 36px;
+  font-weight: 600;
+  color: #2a2a2a;
+  text-align: center;
+  margin: 0 0 70px 0;
+  line-height: 1.3;
 }
 
 .advantagesGrid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px 40px;
-    max-width: 1100px;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px 40px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .advantageCard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
 }
 
 .iconWrapper {
-    width: 70px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-    transition: all 0.3s ease;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  transition: all 0.3s ease;
 }
 
 .advantageCard:hover .iconWrapper {
-    transform: scale(1.15);
+  transform: scale(1.15);
 }
 
 .advantageTitle {
-    font-size: 18px;
-    font-weight: 600;
-    color: #1a1a1a;
-    margin: 0;
-    line-height: 1.3;
+  color: #2a2a2a;
+  font-family: var(--font-pilat);
+  font-weight: 700;
+  font-size: 18.8px;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .advantageDescription {
-    font-size: 15px;
-    line-height: 1.6;
-    color: #4a4a4a;
-    margin: 0;
-    max-width: 340px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #4a4a4a;
+  margin: 0;
+  max-width: 340px;
 }
 
 /* Tablet Styles */
 @media (max-width: 1024px) {
-    .advantagesSection {
-        padding: 60px 32px;
-    }
+  .advantagesSection {
+    padding: 60px 32px;
+  }
 
-    .title {
-        font-size: 32px;
-        margin-bottom: 60px;
-    }
+  .title {
+    font-size: 32px;
+    margin-bottom: 60px;
+  }
 
-    .advantagesGrid {
-        gap: 45px 35px;
-    }
+  .advantagesGrid {
+    gap: 45px 35px;
+  }
 
-    .iconWrapper {
-        width: 65px;
-        height: 65px;
-        font-size: 36px;
-    }
+  .iconWrapper {
+    width: 65px;
+    height: 65px;
+    font-size: 36px;
+  }
 
-    .advantageTitle {
-        font-size: 17px;
-    }
+  .advantageTitle {
+    font-size: 17px;
+  }
 
-    .advantageDescription {
-        font-size: 14px;
-    }
+  .advantageDescription {
+    font-size: 14px;
+  }
 }
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-    .advantagesSection {
-        padding: 50px 24px;
-    }
+  .advantagesSection {
+    padding: 50px 24px;
+  }
 
-    .title {
-        font-size: 28px;
-        margin-bottom: 50px;
-    }
+  .title {
+    font-size: 28px;
+    margin-bottom: 50px;
+  }
 
-    .advantagesGrid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px 30px;
-    }
+  .advantagesGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 30px;
+  }
 
-    .iconWrapper {
-        width: 60px;
-        height: 60px;
-        font-size: 34px;
-    }
+  .iconWrapper {
+    width: 60px;
+    height: 60px;
+    font-size: 34px;
+  }
 
-    .advantageTitle {
-        font-size: 16px;
-    }
+  .advantageTitle {
+    font-size: 16px;
+  }
 
-    .advantageDescription {
-        font-size: 13px;
-        max-width: 100%;
-    }
+  .advantageDescription {
+    font-size: 13px;
+    max-width: 100%;
+  }
 }
 
 /* Small Mobile Styles */
 @media (max-width: 480px) {
-    .advantagesSection {
-        padding: 40px 20px;
-    }
+  .advantagesSection {
+    padding: 40px 20px;
+  }
 
-    .title {
-        font-size: 24px;
-        margin-bottom: 40px;
-    }
+  .title {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
 
-    .advantagesGrid {
-        grid-template-columns: 1fr;
-        gap: 35px;
-        max-width: 400px;
-    }
+  .advantagesGrid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    max-width: 400px;
+  }
 
-    .iconWrapper {
-        width: 55px;
-        height: 55px;
-        font-size: 32px;
-    }
+  .iconWrapper {
+    width: 55px;
+    height: 55px;
+    font-size: 32px;
+  }
 
-    .advantageTitle {
-        font-size: 15px;
-    }
+  .advantageTitle {
+    font-size: 15px;
+  }
 
-    .advantageDescription {
-        font-size: 13px;
-        line-height: 1.5;
-    }
+  .advantageDescription {
+    font-size: 13px;
+    line-height: 1.5;
+  }
 }

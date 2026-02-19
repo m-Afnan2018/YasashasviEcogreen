@@ -18,14 +18,16 @@ export default function Hero() {
 
                 </div>
 
+                <div className={styles.line}/>
+
                 <div className={styles.actions}>
                     <button className={styles.primaryBtn}>
-                        Explore what we do
+                        Ask for sample 
                         <span>→</span>
                     </button>
 
                     <button className={styles.secondaryBtn}>
-                        Get in Touch
+                        Download Broucher
                         <span>→</span>
                     </button>
                 </div>

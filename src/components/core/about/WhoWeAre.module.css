@@ -1,31 +1,99 @@
 .WhoWeAre {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  padding: 100px 40px;
 }
 
-.WhoWeAre>* {
-    width: 100%;
+.WhoWeAre > * {
+  flex: 1;
 }
 
 .mainSection {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.mainSection h5 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+  color: #7ac143;
+  font-weight: 600;
+}
+
+.mainSection h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.mainSection p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+  max-width: 550px;
+}
+
+.WhoWeAre img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* ------------------ Tablet ------------------ */
+
+@media (max-width: 1024px) {
+  .WhoWeAre {
+    gap: 3rem;
+    padding: 80px 32px;
+  }
+
+  .mainSection h2 {
+    font-size: 2.2rem;
+  }
+}
+
+/* ------------------ Mobile ------------------ */
+
+@media (max-width: 768px) {
+  .WhoWeAre {
     flex-direction: column;
-    gap: 1rem;
+    text-align: center;
+    padding: 70px 24px;
+  }
+
+  .mainSection {
+    align-items: center;
+  }
+
+  .mainSection p {
+    max-width: 100%;
+  }
+
+  .mainSection h2 {
+    font-size: 2rem;
+  }
+
+  .WhoWeAre img {
+    max-width: 100%;
+  }
 }
 
-.mainSection>h5,
-.mainSection>h2{
-    text-align: left;
-}
+/* ------------------ Small Mobile ------------------ */
 
-.WhoWeAre>img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    max-width: 500px;
+@media (max-width: 480px) {
+  .mainSection h2 {
+    font-size: 1.7rem;
+  }
+
+  .mainSection p {
+    font-size: 0.95rem;
+  }
 }

@@ -1,73 +1,107 @@
 .wrapper {
-    background: #000;
-    color: #fff;
-    /* padding: 90px 40px; */
-    position: relative;
-    overflow: hidden;
+  background: #000;
+  color: #fff;
+  padding: 100px 40px;
+  position: relative;
+  overflow: hidden;
 }
 
 .container {
-    /* max-width: 1200px; */
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    align-items: center;
-    gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
 }
+
+/* LEFT CONTENT */
 
 .left {
-    max-width: 640px;
-    margin-left: 5rem;
+  flex: 1;
+  max-width: 600px;
 }
 
-.label {
-    display: inline-block;
-    font-size: 12px;
-    font-weight: 600;
-    color: #7ac143;
-    letter-spacing: 1px;
-    margin-bottom: 14px;
+.left h5 {
+  font-size: 13px;
+  font-weight: 600;
+  color: #7ac143;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
 }
 
 .left p {
-    font-size: 15px;
-    line-height: 1.7;
-    color: #d9d9d9;
-    margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #d9d9d9;
+  margin-bottom: 18px;
 }
 
+/* RIGHT IMAGE */
+
 .right {
-    position: relative;
-    min-height: 360px;
-    border-radius: 500px 0 0 500px;
-    overflow: hidden;
+  flex: 1;
+  position: relative;
+  min-height: 420px;
+  border-radius: 500px 0 0 500px;
+  overflow: hidden;
 }
 
 .image {
-    object-fit: contain;
-    position: absolute;
-    height: 100%;
-    width: auto !important;
-    inset: 0px;
+  object-fit: cover;
+  border-radius: 500px 0 0 500px;
 }
 
-/* RESPONSIVE */
+/* ---------------- Tablet ---------------- */
+
+@media (max-width: 1024px) {
+  .wrapper {
+    padding: 80px 32px;
+  }
+
+  .container {
+    gap: 40px;
+  }
+
+  .right {
+    min-height: 340px;
+  }
+}
+
+/* ---------------- Mobile ---------------- */
+
 @media (max-width: 900px) {
-    .container {
-        grid-template-columns: 1fr;
-    }
+  .container {
+    flex-direction: column;
+  }
 
-    .right {
-        min-height: 280px;
-    }
+  .left {
+    max-width: 100%;
+  }
+
+  .right {
+    width: 100%;
+    min-height: 280px;
+    border-radius: 20px;
+  }
+
+  .image {
+    border-radius: 20px;
+  }
 }
+
+/* ---------------- Small Mobile ---------------- */
 
 @media (max-width: 480px) {
-    .wrapper {
-        padding: 60px 20px;
-    }
+  .wrapper {
+    padding: 70px 24px;
+  }
 
-    .left p {
-        font-size: 14px;
-    }
+  .left p {
+    font-size: 14px;
+  }
+
+  .right {
+    min-height: 240px;
+  }
 }

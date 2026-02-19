@@ -1,5 +1,5 @@
 import TestimonialSection from "@/components/common/Testimonial/Testimonials";
-import Hero from "@/components/core/products/Hero";
+import Hero from "@/components/core/what-we-do/Hero";
 import WhoWeAre from "@/components/core/what-we-do/WhoWeAre";
 
 

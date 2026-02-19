@@ -1,128 +1,176 @@
 .hero {
-    position: relative;
-    min-height: 100vh;
-    background-image: url('/assets/images/hero-bg.jpg');
-    /* replace with your image */
-    background-size: cover;
-    background-position: top;
-    display: flex;
-    align-items: flex-end;
-    padding: 0 6%;
-    padding-bottom: 4rem;
-    color: #ffffff;
+  position: relative;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 6%;
+  padding-bottom: 5rem;
+  color: #ffffff;
 }
 
 .overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to right,
-            rgba(0, 0, 0, 0.75) 0%,
-            rgba(0, 0, 0, 0.6) 45%,
-            rgba(0, 0, 0, 0.25) 100%);
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.65) 45%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
 }
 
 .content {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    justify-content: space-between;
-    gap: 5rem;
+  z-index: 2;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+}
+
+.line{
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, white, transparent);
+    border-radius: 100%;
 }
 
 .left {
-    max-width: 800px;
+  max-width: 700px;
 }
 
 .content h2 {
-    text-align: left;
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: left;
 }
 
 .subheading {
-    color: #7ac143;
-    font-size: 0.95rem;
-    font-weight: 600;
-    margin: 1rem 0;
+  color: #7ac143;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .description {
-    font-size: 1rem;
-    line-height: 1.7;
-    max-width: 700px;
-    margin-bottom: 2.2rem;
-    color: #e6e6e6;
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 600px;
+  margin-bottom: 2rem;
+  color: #e6e6e6;
 }
 
 .actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .primaryBtn,
 .secondaryBtn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.6rem;
-    padding: 0.75rem 1.4rem;
-    font-size: 0.95rem;
-    font-weight: 600;
-    border-radius: 4px;
-    cursor: pointer;
-    border: none;
-    transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.8rem 1.6rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.25s ease;
+  white-space: nowrap;
 }
 
 .primaryBtn {
-    background-color: #7ac143;
-    color: rgb(255, 255, 255);
+  background-color: #7ac143;
+  color: #ffffff;
 }
 
 .primaryBtn:hover {
-    background-color: #6ab437;
+  background-color: #6ab437;
 }
 
 .secondaryBtn {
-    background-color: transparent;
-    color: #ffffff;
-    border: 1px solid #7ac143;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #7ac143;
 }
 
 .secondaryBtn:hover {
-    background-color: #7ac143;
-    color: #ffffff;
+  background-color: #7ac143;
+  color: #ffffff;
 }
 
-/* ------------------ Responsive ------------------ */
+/* ---------------- Tablet ---------------- */
+
+@media (max-width: 1024px) {
+  .hero {
+    padding: 0 5%;
+    padding-bottom: 4rem;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .actions {
+    margin-top: 1.5rem;
+  }
+
+  .content h2 {
+    font-size: 2.4rem;
+  }
+}
+
+/* ---------------- Mobile ---------------- */
 
 @media (max-width: 768px) {
-    .hero {
-        padding: 0 5%;
-        min-height: 90vh;
-    }
+  .hero {
+    min-height: 85vh;
+    padding-bottom: 3rem;
+  }
 
-    .content h1 {
-        font-size: 2rem;
-    }
+  .content h2 {
+    font-size: 2rem;
+  }
 
-    .description {
-        font-size: 0.95rem;
-    }
+  .description {
+    font-size: 0.95rem;
+  }
+
+  .actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .primaryBtn,
+  .secondaryBtn {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
-@media (max-width: 480px) {
-    .actions {
-        flex-direction: column;
-        width: 100%;
-    }
+/* ---------------- Small Mobile ---------------- */
 
-    .primaryBtn,
-    .secondaryBtn {
-        width: 100%;
-        justify-content: center;
-    }
+@media (max-width: 480px) {
+  .content h2 {
+    font-size: 1.7rem;
+    line-height: 1.3;
+  }
+
+  .subheading {
+    font-size: 0.9rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
 }
