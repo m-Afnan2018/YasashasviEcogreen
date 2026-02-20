@@ -1,7 +1,7 @@
 'use client';
 
 import styles from './GrowthOutlook.module.css';
-import growthBg from '@/assets/images/home/growth-background.jpg';
+import growthBg from '@/assets/images/home/growth-background.webp';
 
 interface GrowthPoint {
     id: number;

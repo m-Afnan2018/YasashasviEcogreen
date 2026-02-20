@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from './GlobalMarkets.module.css'
 import mapImage from '@/assets/images/home/world-map.png'
-import supportBg from '@/assets/images/home/support-bg.jpg'
+import supportBg from '@/assets/images/home/support-bg.webp'
 
 export function GlobalMarkets() {
     const regions = [

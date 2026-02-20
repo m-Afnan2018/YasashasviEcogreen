@@ -5,9 +5,9 @@ import Image from 'next/image';
 import styles from './Glance.module.css';
 import { FaLeaf, FaRecycle, FaHandsHelping } from "react-icons/fa";
 import type { StaticImageData } from 'next/image';
-import glance1 from '@/assets/images/home/glance-1.png'
-import glance2 from '@/assets/images/home/glance-2.png'
-import glance3 from '@/assets/images/home/glance-3.png'
+import glance1 from '@/assets/images/about/glance-1.webp'
+import glance2 from '@/assets/images/about/glance-2.webp'
+import glance3 from '@/assets/images/about/glance-3.webp'
 
 interface GlanceItem {
     index: number;
@@ -74,7 +74,7 @@ export default function GlanceSection() {
     const [activeTab, setActiveTab] = useState(1);
 
     const activeData = glanceData[activeTab];
-    const TabIcon = tabIcons[activeTab];
+    // const TabIcon = tabIcons[activeTab];
 
     return (
         <section className={styles.glanceSection}>

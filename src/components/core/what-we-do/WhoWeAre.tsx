@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./WhoWeAre.module.css";
-import doOne from "@/assets/images/whatWeDo/do-one.jpg";
-import doTwo from "@/assets/images/whatWeDo/do-two.jpg";
+import doOne from "@/assets/images/whatWeDo/do-one.webp";
+import doTwo from "@/assets/images/whatWeDo/do-two.webp";
 
 export default function WhoWeAre() {
   return (

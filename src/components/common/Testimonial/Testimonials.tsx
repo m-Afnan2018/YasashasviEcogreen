@@ -7,7 +7,7 @@ import elizabeth from '@/assets/images/avatars/elizabeth.png'
 import anthony from '@/assets/images/avatars/anthony.png'
 import testimonialBackground from '@/assets/images/home/testimonial-background.jpg'
 import supportBg from '@/assets/images/home/support-bg.jpg'
-import { StaticImageData } from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
 interface Testimonial {
     id: number;
@@ -103,7 +103,7 @@ export default function TestimonialSection() {
                             <div className={styles.cardContent}>
                                 <div className={styles.profileSection}>
                                     <div className={styles.avatar}>
-                                        <img src={testimonial.avatar.src} alt={testimonial.name} />
+                                        <Image width={100} height={100} src={testimonial.avatar.src} alt={testimonial.name} />
                                     </div>
                                     <div className={styles.profileInfo}>
                                         <h3 className={styles.name}>{testimonial.name}</h3>

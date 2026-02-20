@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import aboutImage from '@/assets/images/home/about-image.jpg'
+import aboutImage from '@/assets/images/home/about-image.webp'
 import growthIcon from '@/assets/images/home/growth-icon.svg'
 import sustainableIcon from '@/assets/images/home/sustainable-icon.svg'
 import styles from './About.module.css'

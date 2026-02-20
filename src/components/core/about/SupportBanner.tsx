@@ -1,5 +1,5 @@
 import styles from './SupportBanner.module.css'
-import supportBg from '@/assets/images/home/support-bg.jpg'
+import supportBg from '@/assets/images/home/support-bg.webp'
 
 export function SupportBanner() {
 

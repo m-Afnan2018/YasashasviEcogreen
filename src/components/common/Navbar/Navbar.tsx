@@ -8,9 +8,10 @@ import Image from "next/image";
 import logo from '@/assets/images/common/logo.png'
 
 const productLinks = [
-    { name: "Silicon Carbide", href: "/products/silicon-carbide" },
-    { name: "Iron and Steel", href: "/products/iron-and-steel" },
-    { name: "Cryolite", href: "/products/cryolite" },
+    { name: "Silicon Carbide", href: "/product/silicon-carbide" },
+    { name: "Iron and Steel", href: "/product/iron-and-steel" },
+    { name: "Cryolite", href: "/product/cryolite" },
+    { name: "Slag Scrap", href: "/product/slag-scrap" },
 ];
 
 const navLinks = [

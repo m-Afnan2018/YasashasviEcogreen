@@ -1,5 +1,5 @@
 import Image from "next/image";
-import WhoWeAreImage from '@/assets/images/about/who-we-are.jpg'
+import WhoWeAreImage from '@/assets/images/about/who-we-are.webp'
 import styles from './WhoWeAre.module.css'
 
 

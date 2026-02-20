@@ -2,11 +2,11 @@ import Image from 'next/image'
 import styles from './Portfolio.module.css'
 
 // Import your product images
-import ironSteelImage from '@/assets/images/home/iron-steel.png'
-import cryoliteImage from '@/assets/images/home/cryolite.png'
-import siliconCarbideImage from '@/assets/images/home/silicon-carbide.png'
-import aluminiumImage from '@/assets/images/home/aluminium.png'
-import slagImage from '@/assets/images/home/slag.png'
+import ironSteelImage from '@/assets/images/home/product-1.png'
+import cryoliteImage from '@/assets/images/home/product-2.png'
+import siliconCarbideImage from '@/assets/images/home/product-3.png'
+import aluminiumImage from '@/assets/images/home/product-4.png'
+import slagImage from '@/assets/images/home/product-5.png'
 
 export function Portfolio() {
     const products = [

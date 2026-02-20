@@ -1,7 +1,7 @@
 'use client';
 
 import styles from './OurRecycling.module.css';
-import growthBg from '@/assets/images/home/growth-background.jpg';
+import growthBg from '@/assets/images/about/growth-background.webp';
 
 interface OurRecycling {
     id: number;

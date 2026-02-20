@@ -1,5 +1,5 @@
 import styles from "./Hero.module.css";
-import hero from "@/assets/images/home/hero-image.jpg";
+import hero from "@/assets/images/whatWeDo/hero-image.webp";
 
 export default function Hero() {
   return (
