@@ -4,39 +4,41 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Footer.module.css';
 import logo from '@/assets/images/common/logo.png'; // Adjust path as needed
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaWhatsapp, FaPinterestP, FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
+import { FaFacebookF, FaLinkedinIn, FaWhatsapp, FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaInstagram } from 'react-icons/fa';
 
 interface QuickLink {
     label: string;
     href: string;
 }
 
-interface Industry {
+interface Products {
     label: string;
     href: string;
 }
 
 const quickLinks: QuickLink[] = [
     { label: 'About Us', href: '/about' },
-    { label: 'Services', href: '/services' },
+    // { label: 'Services', href: '/services' },
     { label: 'What We Do', href: '/what-we-do' },
     { label: 'Products', href: '/products' },
-    { label: 'Contact Us', href: '/contact' }
+    { label: 'Contact Us', href: '/contact-us' }
 ];
 
-const industries: Industry[] = [
-    { label: 'Operations & Trade Execution', href: '/industries/operations' },
-    { label: 'Global Markets', href: '/industries/global-markets' },
-    { label: 'Sustainability & Responsibilty', href: '/industries/sustainability' },
-    { label: 'Growth & Outlook', href: '/industries/growth-outlook' }
+const products: Products[] = [
+    { label: 'Silicon Carbide', href: '/product/silicon-carbide' },
+    { label: 'Cryolite', href: '/product/cryolite' },
+    { label: 'Iron and Steel', href: '/product/iron-and-steel' },
+    { label: 'Aluminium Ignots', href: '/product/aluminium-ignots' },
+    { label: 'Slag Scrap', href: '/product/slag-scrap' }
 ];
 
 const socialLinks = [
-    { name: 'Facebook', icon: FaFacebookF, href: '#' },
-    { name: 'Twitter', icon: FaTwitter, href: '#' },
-    { name: 'LinkedIn', icon: FaLinkedinIn, href: '#' },
-    { name: 'WhatsApp', icon: FaWhatsapp, href: '#' },
-    { name: 'Pinterest', icon: FaPinterestP, href: '#' }
+    { name: 'Facebook', icon: FaFacebookF, href: 'https://www.facebook.com/profile.php?id=61587226593223' },
+    // { name: 'Twitter', icon: FaTwitter, href: '#' },
+    { name: 'LinkedIn', icon: FaLinkedinIn, href: 'https://www.linkedin.com/company/111273323/admin/dashboard/' },
+    { name: 'WhatsApp', icon: FaWhatsapp, href: 'wa.me/+971585964345' },
+    { name: 'Instagram', icon: FaInstagram, href: 'https://www.instagram.com/yasashviecogreen' },
+    // { name: 'Pinterest', icon: FaPinterestP, href: '#' }
 ];
 // const socialLinks = [
 //     { name: 'Facebook', icon: 'facebook', href: '#', iconClass: 'fab fa-facebook-f' },
@@ -101,9 +103,9 @@ export default function Footer() {
 
                     {/* Industries Section */}
                     <div className={styles.linksSection}>
-                        <h3 className={styles.sectionTitle}>INDUSTRIES</h3>
+                        <h3 className={styles.sectionTitle}>Products</h3>
                         <ul className={styles.linksList}>
-                            {industries.map((industry) => (
+                            {products.map((industry) => (
                                 <li key={industry.label}>
                                     <Link href={industry.href} className={styles.link}>
                                         {industry.label}
@@ -130,7 +132,7 @@ export default function Footer() {
                                 <div className={styles.iconBox}>
                                     <FaMapMarkerAlt />
                                 </div>
-                                <a href="mailto:finance@yashashviecogreen.com" className={styles.contactLink}>
+                                <a href="mailto:finance@yasashviecogreen.com" className={styles.contactLink}>
                                     Office 406, 201 Mashreq, Al Sug Al Kabeer, Dubai, United Arab Emirates
                                 </a>
                             </div>
@@ -139,8 +141,8 @@ export default function Footer() {
                                 <div className={styles.iconBox}>
                                     <FaEnvelope />
                                 </div>
-                                <a href="mailto:finance@yashashviecogreen.com" className={styles.contactLink}>
-                                    finance@yashashviecogreen.com
+                                <a href="mailto:finance@yasashviecogreen.com" className={styles.contactLink}>
+                                    finance@yasashviecogreen.com
                                 </a>
                             </div>
 

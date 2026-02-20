@@ -105,7 +105,7 @@
 }
 
 /* Explore More Button */
-.About>div>div>div:last-child button {
+.About>div>div>div:last-child a {
     align-self: flex-start;
     padding: 0.875rem 2rem;
     background: #76b82a;
@@ -121,19 +121,19 @@
     box-shadow: 0 4px 12px rgba(118, 184, 42, 0.25);
 }
 
-.About>div>div>div:last-child button:hover {
+.About>div>div>div:last-child a:hover {
     background: #65a020;
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(118, 184, 42, 0.35);
 }
 
-.About>div>div>div:last-child button::after {
+.About>div>div>div:last-child a::after {
     content: ' →';
     margin-left: 0.5rem;
     transition: margin-left 0.3s ease;
 }
 
-.About>div>div>div:last-child button:hover::after {
+.About>div>div>div:last-child a:hover::after {
     margin-left: 0.75rem;
 }
 
@@ -226,7 +226,7 @@
         border-radius: 8px;
     }
 
-    .About>div>div>div:last-child button {
+    .About>div>div>div:last-child a {
         width: 100%;
         padding: 0.875rem 1.5rem;
     }

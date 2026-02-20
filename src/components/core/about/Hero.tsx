@@ -19,10 +19,10 @@ export default function Hero() {
                 </div>
 
                 <div className={styles.actions}>
-                    <button className={styles.primaryBtn}>
+                    <a href='/contact-us' className={styles.primaryBtn}>
                         Talk to an Expert
                         <span>→</span>
-                    </button>
+                    </a>
 
                     {/* <button className={styles.secondaryBtn}>
                         Get in Touch

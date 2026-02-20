@@ -11,6 +11,7 @@ const productLinks = [
     { name: "Silicon Carbide", href: "/product/silicon-carbide" },
     { name: "Iron and Steel", href: "/product/iron-and-steel" },
     { name: "Cryolite", href: "/product/cryolite" },
+    { name: "Aluminum Ingots", href: "/product/aluminum-ingots" },
     { name: "Slag Scrap", href: "/product/slag-scrap" },
 ];
 
@@ -138,11 +139,11 @@ export default function Navbar() {
                     })}
 
                     {/* CTA Button for Mobile */}
-                    <Link href="/contact" className="cta-btn mobile-cta" onClick={closeMenu}>
-                        Get Started
+                    <Link href='/files/yasashvi-ecogreen-company-profile.pdf' download={true}  className="cta-btn mobile-cta" onClick={closeMenu}>
+                        download Broucher
                     </Link>
-                    <Link href="/contact" className="cta-btn desktop-cta">
-                        Get Started
+                    <Link href='/files/yasashvi-ecogreen-company-profile.pdf' download={true}  className="cta-btn desktop-cta">
+                        download Broucher
                     </Link>
                 </nav>
             </div>

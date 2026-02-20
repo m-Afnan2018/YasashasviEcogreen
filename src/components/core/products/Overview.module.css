@@ -1,14 +1,15 @@
 .wrapper {
   background: #000;
   color: #fff;
-  padding: 100px 40px;
+  /* padding: 100px 40px; */
   position: relative;
   overflow: hidden;
 }
 
 .container {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
+  margin-left: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -45,6 +46,7 @@
   min-height: 420px;
   border-radius: 500px 0 0 500px;
   overflow: hidden;
+  max-width: 40%;
 }
 
 .image {

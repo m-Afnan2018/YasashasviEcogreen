@@ -12,7 +12,7 @@ export function SupportBanner() {
                         <h2>Contact With Us For Customer Support</h2>
                         <p>We provide 24/7 hours support</p>
                     </div>
-                    <button className={styles.supportBtn}>GET SUPPORT</button>
+                    <a href='/contact-us' className={styles.supportBtn}>GET SUPPORT</a>
                 </div>
             </div>
         </section>

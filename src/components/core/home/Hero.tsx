@@ -27,15 +27,15 @@ export default function Hero() {
         </div>
 
         <div className={styles.actions}>
-          <button className={styles.primaryBtn}>
+          <a href="/products" className={styles.primaryBtn}>
             Explore what we do
             <span>→</span>
-          </button>
+          </a>
 
-          <button className={styles.secondaryBtn}>
+          <a href="/contact-us" className={styles.secondaryBtn}>
             Get in Touch
             <span>→</span>
-          </button>
+          </a>
         </div>
       </div>
     </section>

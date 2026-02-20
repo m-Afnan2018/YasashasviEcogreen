@@ -8,7 +8,7 @@ interface CryoliteHeroProps {
 }
 
 const CryoliteHero: React.FC<CryoliteHeroProps> = ({
-  backgroundImage = image.src, 
+  backgroundImage = image.src,
 }) => {
   return (
     <div
@@ -39,7 +39,11 @@ const CryoliteHero: React.FC<CryoliteHeroProps> = ({
           </p>
 
           <div className={styles.buttonGroup}>
-            <button className={`${styles.button} ${styles.buttonPrimary}`}>
+            <a
+              href="/files/yasashvi-ecogreen-company-profile.pdf"
+              download={true}
+              className={`${styles.button} ${styles.buttonPrimary}`}
+            >
               <svg
                 className={styles.buttonIcon}
                 viewBox="0 0 20 20"
@@ -53,8 +57,12 @@ const CryoliteHero: React.FC<CryoliteHeroProps> = ({
                 />
               </svg>
               Ask For Sample
-            </button>
-            <button className={`${styles.button} ${styles.buttonSecondary}`}>
+            </a>
+            <a
+              href="/files/yasashvi-ecogreen-company-profile.pdf"
+              download={true}
+              className={`${styles.button} ${styles.buttonSecondary}`}
+            >
               <svg
                 className={styles.buttonIcon}
                 viewBox="0 0 20 20"
@@ -68,7 +76,7 @@ const CryoliteHero: React.FC<CryoliteHeroProps> = ({
                 />
               </svg>
               Download Brouchure
-            </button>
+            </a>
           </div>
         </div>
       </div>

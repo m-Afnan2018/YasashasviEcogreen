@@ -28,11 +28,21 @@ const SiliconCarbide: React.FC<SiliconCarbide> = ({
           <h1 className={styles.title}>Silicon Carbide ( SIC)</h1>
 
           <p className={styles.description}>
-            Silicon Carbide is a synthetically manufactured compound of silicon and carbon (SiC) that has become the industry standard for high-performance applications requiring exceptional hardness, thermal stability, and chemical inertness. Unlike naturally occurring abrasives, industrial-grade SiC is engineered for consistency and precision, delivering predictable results across demanding applications.
+            Silicon Carbide is a synthetically manufactured compound of silicon
+            and carbon (SiC) that has become the industry standard for
+            high-performance applications requiring exceptional hardness,
+            thermal stability, and chemical inertness. Unlike naturally
+            occurring abrasives, industrial-grade SiC is engineered for
+            consistency and precision, delivering predictable results across
+            demanding applications.
           </p>
 
           <div className={styles.buttonGroup}>
-            <button className={`${styles.button} ${styles.buttonPrimary}`}>
+            <a
+              href="/files/yasashvi-ecogreen-company-profile.pdf"
+              download={true}
+              className={`${styles.button} ${styles.buttonPrimary}`}
+            >
               <svg
                 className={styles.buttonIcon}
                 viewBox="0 0 20 20"
@@ -46,8 +56,12 @@ const SiliconCarbide: React.FC<SiliconCarbide> = ({
                 />
               </svg>
               Ask For Sample
-            </button>
-            <button className={`${styles.button} ${styles.buttonSecondary}`}>
+            </a>
+            <a
+              href="/files/yasashvi-ecogreen-company-profile.pdf"
+              download={true}
+              className={`${styles.button} ${styles.buttonSecondary}`}
+            >
               <svg
                 className={styles.buttonIcon}
                 viewBox="0 0 20 20"
@@ -61,7 +75,7 @@ const SiliconCarbide: React.FC<SiliconCarbide> = ({
                 />
               </svg>
               Download Brouchure
-            </button>
+            </a>
           </div>
         </div>
       </div>

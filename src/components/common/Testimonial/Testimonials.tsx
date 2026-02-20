@@ -142,8 +142,8 @@ export default function TestimonialSection() {
                         Contact Yashashvi Ecogreen LLC today to discuss sourcing, supply, and global trade opportunities.
                     </p>
                     <div className={styles.ctaButtons}>
-                        <button className={styles.btnPrimary}>CONTACT US</button>
-                        <button className={styles.btnSecondary}>EXPLORE MARKETS</button>
+                        <a href='/contact-us' className={styles.btnPrimary}>CONTACT US</a>
+                        <a href='/products' className={styles.btnSecondary}>EXPLORE MARKETS</a>
                     </div>
                 </div>
             </div>

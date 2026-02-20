@@ -31,7 +31,7 @@ export function About() {
                             <p>Responsible sourcing with quality-driven, eco-focused growth.</p>
                         </div>
                     </div>
-                    <button>Explore more</button>
+                    <a href='/about'>Explore more</a>
                 </div>
             </div>
         </div>
