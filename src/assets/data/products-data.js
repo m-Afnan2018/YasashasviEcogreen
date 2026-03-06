@@ -7,7 +7,7 @@ const productsData = [
             "chemical_formula": "Na3AlF6",
             "description": "Aluminum ingots are cast forms of pure or alloyed aluminum produced by pouring molten aluminum into specialized molds. They serve as the foundational raw material for aluminum-dependent industries, enabling transformation into finished products ranging from aircraft fuselages to beverage cans. Ingots represent the critical link between primary aluminum production and manufacturing sectors worldwide.",
             "physical_characteristics": {
-                "Chemical Composition": "Aluminium (Al): 99.5% – 99.9% (depending on grade)",
+                "Chemical Composition": "Aluminum (Al): 99.5% – 99.9% (depending on grade)",
                 "Crystal Structure": "Face-Centered Cubic (FCC) crystal structure enabling excellent ductility, formability, and conductivity",
                 "Appearance": "Silvery-white metallic solid with smooth and uniform surface finish",
                 "Density": "2.70 g/cm³ (lightweight metal with excellent strength-to-weight ratio)",

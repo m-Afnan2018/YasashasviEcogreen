@@ -28,7 +28,7 @@ const products: Products[] = [
     { label: 'Silicon Carbide', href: '/product/silicon-carbide' },
     { label: 'Cryolite', href: '/product/cryolite' },
     { label: 'Iron and Steel', href: '/product/iron-and-steel' },
-    { label: 'Aluminium Ignots', href: '/product/aluminium-ignots' },
+    { label: 'Aluminum Ingots', href: '/product/aluminum-ingots' },
     { label: 'Slag Scrap', href: '/product/slag-scrap' }
 ];
 
@@ -36,7 +36,7 @@ const socialLinks = [
     { name: 'Facebook', icon: FaFacebookF, href: 'https://www.facebook.com/profile.php?id=61587226593223' },
     // { name: 'Twitter', icon: FaTwitter, href: '#' },
     { name: 'LinkedIn', icon: FaLinkedinIn, href: 'https://www.linkedin.com/company/111273323/admin/dashboard/' },
-    { name: 'WhatsApp', icon: FaWhatsapp, href: 'wa.me/+971585964345' },
+    { name: 'WhatsApp', icon: FaWhatsapp, href: 'https://wa.me/+971585964345' },
     { name: 'Instagram', icon: FaInstagram, href: 'https://www.instagram.com/yasashviecogreen' },
     // { name: 'Pinterest', icon: FaPinterestP, href: '#' }
 ];
@@ -58,7 +58,7 @@ export default function Footer() {
                         <div className={styles.logoContainer}>
                             <Image
                                 src={logo}
-                                alt="Yashashvi Ecogreen LLC"
+                                alt="Yasashvi Ecogreen LLC"
                                 className={styles.logo}
                                 width={200}
                                 height={60}
@@ -133,7 +133,7 @@ export default function Footer() {
                                     <FaMapMarkerAlt />
                                 </div>
                                 <a href="mailto:finance@yasashviecogreen.com" className={styles.contactLink}>
-                                    Office 406, 201 Mashreq, Al Sug Al Kabeer, Dubai, United Arab Emirates
+                                    Office 405, 201 Mashreq,<br/> Al Suq Al Kabeer, <br/> Dubai, United Arab Emirates
                                 </a>
                             </div>
 

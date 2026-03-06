@@ -34,7 +34,7 @@ export default function ContactSection() {
         <input
           type="hidden"
           name="_subject"
-          value="New Enquiry – Yashashvi Ecogreen"
+          value="New Enquiry – Yasashvi Ecogreen"
         />
         <input type="hidden" name="_captcha" value="false" />
         <input type="hidden" name="_template" value="table" />

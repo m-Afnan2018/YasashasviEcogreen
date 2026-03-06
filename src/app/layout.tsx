@@ -58,30 +58,30 @@ const dmSans = localFont({
 
 export const metadata: Metadata = {
     title: {
-        default: "Yashashvi Ecogreen | Global Trade & Supply Solutions",
-        template: "%s | Yashashvi Ecogreen",
+        default: "Yasashvi Ecogreen | Global Trade & Supply Solutions",
+        template: "%s | Yasashvi Ecogreen",
     },
     description:
-        "Yashashvi Ecogreen specializes in import & export, trading, and supply coordination. Connecting global markets with reliable commercial solutions.",
+        "Yasashvi Ecogreen specializes in import & export, trading, and supply coordination. Connecting global markets with reliable commercial solutions.",
     keywords: [
         "import export UAE",
         "global trading company",
         "supply coordination",
-        "Yashashvi Ecogreen",
+        "Yasashvi Ecogreen",
         "commodity trading",
         "ecogreen trading",
         "UAE trading company",
         "commercial supply solutions",
     ],
-    authors: [{ name: "Yashashvi Ecogreen" }],
-    creator: "Yashashvi Ecogreen",
-    metadataBase: new URL("https://yashashviecogreen.com"),
+    authors: [{ name: "Yasashvi Ecogreen" }],
+    creator: "Yasashvi Ecogreen",
+    metadataBase: new URL("https://yasashviecogreen.com"),
     openGraph: {
         type: "website",
         locale: "en_US",
-        url: "https://yashashviecogreen.com",
-        siteName: "Yashashvi Ecogreen",
-        title: "Yashashvi Ecogreen | Global Trade & Supply Solutions",
+        url: "https://yasashviecogreen.com",
+        siteName: "Yasashvi Ecogreen",
+        title: "Yasashvi Ecogreen | Global Trade & Supply Solutions",
         description:
             "Specializing in import & export, trading, and supply coordination. Connecting global markets with reliable commercial solutions.",
         images: [
@@ -89,13 +89,13 @@ export const metadata: Metadata = {
                 url: "/og-image.jpg",
                 width: 1200,
                 height: 630,
-                alt: "Yashashvi Ecogreen – Global Trade & Supply Solutions",
+                alt: "Yasashvi Ecogreen – Global Trade & Supply Solutions",
             },
         ],
     },
     twitter: {
         card: "summary_large_image",
-        title: "Yashashvi Ecogreen | Global Trade & Supply Solutions",
+        title: "Yasashvi Ecogreen | Global Trade & Supply Solutions",
         description:
             "Specializing in import & export, trading, and supply coordination. Connecting global markets with reliable commercial solutions.",
         images: ["/og-image.jpg"],

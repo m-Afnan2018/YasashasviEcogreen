@@ -27,14 +27,14 @@ export default function Why() {
       </div>
       <div className={styles.right}>
         <div className={styles.tableHeader}>
-          Chemical Properties – Aluminium Ingots
+          Chemical Properties – Aluminum Ingots
         </div>
         <table className={styles.propertiesTable}>
           <tbody>
             <tr>
               <td className={styles.labelCell}>Chemical Composition</td>
               <td className={styles.valueCell}>
-                Aluminium (Al): 99.5% – 99.9% (depending on grade)
+                Aluminum (Al): 99.5% – 99.9% (depending on grade)
               </td>
             </tr>
 

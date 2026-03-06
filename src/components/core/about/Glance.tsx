@@ -41,7 +41,7 @@ const glanceData: GlanceItem[] = [
         heading: "LEADERSHIP & VISION",
         category: null,
         title: null,
-        prepoints: "Yashashvi Ecogreen L.L.C is led by Mr. Adish Jain, an industry professional with over 12 years of experience in the metal and steel sector, covering recycling operations, industrial processing, and global material supply.",
+        prepoints: "Yasashvi Ecogreen L.L.C is led by Mr. Adish Jain, an industry professional with over 12 years of experience in the metal and steel sector, covering recycling operations, industrial processing, and global material supply.",
         points: [
             "Expanding sustainable recycling capabilities",
             "Building efficient processing systems ",
@@ -56,7 +56,7 @@ const glanceData: GlanceItem[] = [
         heading: "INDUSTRIAL GUIDANCE & ECOSYSTEM",
         category: null,
         title: null,
-        prepoints: "Yashashvi Ecogreen operates within a broader industrial ecosystem supported by decades of experience in metals, mining, and processing.",
+        prepoints: "Yasashvi Ecogreen operates within a broader industrial ecosystem supported by decades of experience in metals, mining, and processing.",
         points: [
             "Expanding sustainable recycling capabilities ",
             "Building efficient processing systems ",

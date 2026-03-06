@@ -140,10 +140,10 @@ export default function Navbar() {
 
                     {/* CTA Button for Mobile */}
                     <Link href='/files/yasashvi-ecogreen-company-profile.pdf' download={true}  className="cta-btn mobile-cta" onClick={closeMenu}>
-                        download Broucher
+                        download Brochure
                     </Link>
                     <Link href='/files/yasashvi-ecogreen-company-profile.pdf' download={true}  className="cta-btn desktop-cta">
-                        download Broucher
+                        download Brochure
                     </Link>
                 </nav>
             </div>

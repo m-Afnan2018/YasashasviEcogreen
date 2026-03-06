@@ -39,7 +39,7 @@ export default function OurRecycling() {
                 <div className={styles.content}>
                     <span className={styles.badge}>OUR RECYCLING PHILOSOPHY</span>
                     <h2 className={styles.title}>
-                        At Yashashvi Ecogreen, recycling is more than waste management — it is industrial resource recovery.
+                        At Yasashvi Ecogreen, recycling is more than waste management — it is industrial resource recovery.
                     </h2>
                     <div className={styles.underline}></div>
 

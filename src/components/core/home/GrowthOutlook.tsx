@@ -35,7 +35,7 @@ export default function GrowthOutlook() {
                 <div className={styles.content}>
                     <span className={styles.badge}>Growth Outlook (Preview)</span>
                     <h2 className={styles.title}>
-                        Yashashvi Ecogreen L.L.C Is Positioned For Steady And Sustainable Growth, Driven By:
+                        Yasashvi Ecogreen L.L.C Is Positioned For Steady And Sustainable Growth, Driven By:
                     </h2>
                     <div className={styles.underline}></div>
                     

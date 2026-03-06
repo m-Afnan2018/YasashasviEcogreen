@@ -11,7 +11,7 @@ export default function Overview() {
                     <h5>OVERVIEW</h5>
 
                     <p>
-                        At Yashashvi Ecogreen L.L.C, we recycle, process, and supply
+                        At Yasashvi Ecogreen L.L.C, we recycle, process, and supply
                         high-value industrial and metallurgical materials recovered from
                         industrial waste streams and secondary raw materials.
                     </p>

@@ -39,7 +39,7 @@ const products: Product[] = [
     description:
       "High-quality sodium cryolite used in aluminum smelting and metallurgical industries.",
     applications: [
-      "Aluminium production",
+      "Aluminum production",
       "Flux in metallurgy",
       "Ceramics & glass industry",
     ],
@@ -60,7 +60,7 @@ const products: Product[] = [
   },
   {
     id: 3,
-    title: "Aluminium Ingots",
+    title: "Aluminum Ingots",
     image: aluminiumImage,
     description:
       "Pure aluminium ingots supplied for casting, extrusion and industrial usage.",

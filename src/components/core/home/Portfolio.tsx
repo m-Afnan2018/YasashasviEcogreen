@@ -30,9 +30,9 @@ export function Portfolio() {
     },
     {
       id: 4,
-      title: "Aluminium Ingots",
+      title: "Aluminum Ingots",
       image: aluminiumImage,
-      link: "aluminium-ingots",
+      link: "aluminum-ingots",
     },
     {
       id: 5,

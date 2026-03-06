@@ -45,11 +45,11 @@ const glanceData: GlanceItem[] = [
         heading: "Strategic Association with METCYCLE",
         category: "Engineering",
         title: "Strategic Association with METCYCLE",
-        prepoints: "Yashashvi Ecogreen L.L.C is strategically associated with METCYCLE Metal and Mineral Processing SP LLC, a UAE-based manufacturing company actively producing:",
+        prepoints: "Yasashvi Ecogreen L.L.C is strategically associated with METCYCLE Metal and Mineral Processing SP LLC, a UAE-based manufacturing company actively producing:",
         points: [
             "Sodium Cryolite",
             "Silicon Carbide",
-            "Aluminium Ingots",
+            "Aluminum Ingots",
             "Slag Scrap and other industrial materials"
         ],
         description: "This association enables us to offer manufacturing-backed trade reliability, consistent supply capability, and scalability for long-term contracts—strengthening buyer confidence across global markets.",
@@ -57,9 +57,9 @@ const glanceData: GlanceItem[] = [
     },
     {
         index: 2,
-        heading: "Why Choose Yashashvi Ecogreen",
+        heading: "Why Choose Yasashvi Ecogreen",
         category: "Engineering",
-        title: "Why Choose Yashashvi Ecogreen",
+        title: "Why Choose Yasashvi Ecogreen",
         prepoints: null,
         points: [
             "UAE-based, compliance-focused trading company",

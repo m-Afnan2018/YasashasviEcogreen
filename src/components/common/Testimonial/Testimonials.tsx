@@ -40,7 +40,7 @@ const testimonials: Testimonial[] = [
         name: 'Anthony',
         role: 'Industrial',
         avatar: anthony,
-        quote: 'Yashashvi Ecogreen simplifies global trade with professionalism and integrity.',
+        quote: 'Yasashvi Ecogreen simplifies global trade with professionalism and integrity.',
         rating: 5
     }
 ];
@@ -87,7 +87,7 @@ export default function TestimonialSection() {
             <div className={styles.container}>
                 {/* Header */}
                 <div className={styles.header}>
-                    <h2 className={styles.title}>What Say Our Client</h2>
+                    <h2 className={styles.title}>What Our Client Say</h2>
                     <p className={styles.subtitle}>
                         We are trusted by global partners for our transparent trade practices, reliable supply capabilities, and long-term
                         business approach across industrial and marketplace markets.
@@ -139,7 +139,7 @@ export default function TestimonialSection() {
                 <div className={styles.ctaContainer}>
                     <h2 className={styles.ctaTitle}>Looking for a Reliable trading partner?</h2>
                     <p className={styles.ctaSubtitle}>
-                        Contact Yashashvi Ecogreen LLC today to discuss sourcing, supply, and global trade opportunities.
+                        Contact Yasashvi Ecogreen LLC today to discuss sourcing, supply, and global trade opportunities.
                     </p>
                     <div className={styles.ctaButtons}>
                         <a href='/contact-us' className={styles.btnPrimary}>CONTACT US</a>

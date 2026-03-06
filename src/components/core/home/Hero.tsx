@@ -19,7 +19,7 @@ export default function Hero() {
           </p>
 
           <p className={styles.description}>
-            Yashashvi Ecogreen L.L.C is a UAE-based recycling and processing
+            Yasashvi Ecogreen L.L.C is a UAE-based recycling and processing
             company specializing in converting industrial waste and secondary
             raw materials into reusable, high-performance products for
             aluminium, steel, mining, and manufacturing industries worldwide.

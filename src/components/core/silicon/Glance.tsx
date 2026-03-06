@@ -53,9 +53,9 @@ const glanceData: GlanceItem[] = [
     },
     {
         index: 2,
-        heading: "Why Choose Yashashvi Ecogreen",
+        heading: "Why Choose Yasashvi Ecogreen",
         category: "Engineering",
-        title: "Why Choose Yashashvi Ecogreen",
+        title: "Why Choose Yasashvi Ecogreen",
         prepoints: null,
         points: [
             "UAE-based, compliance-focused trading company",

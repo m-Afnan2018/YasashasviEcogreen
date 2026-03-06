@@ -41,7 +41,7 @@ export default function Hero() {
             download={true}
             className={styles.secondaryBtn}
           >
-            Download Broucher
+            Download Brochure
             <span>→</span>
           </a>
         </div>
