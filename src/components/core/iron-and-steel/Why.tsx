@@ -4,7 +4,7 @@ export default function Why() {
   return (
     <section className={styles.Why}>
       <div className={styles.left}>
-        <h2>Why Aluminum is Strategically Important</h2>
+        <h2>Why Iron and Steel Power Modern Industry</h2>
         <p>
           Iron and steel form the foundation of modern infrastructure and
           industrial manufacturing due to their strength, reliability, and

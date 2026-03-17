@@ -4,10 +4,10 @@ import { useState } from "react";
 import Image from "next/image";
 import styles from "./Glance.module.css";
 import type { StaticImageData } from "next/image";
-import glance1 from "@/assets/images/product/aluminum-ingots/glance-1.webp";
-import glance2 from "@/assets/images/product/aluminum-ingots/glance-2.webp";
-import glance3 from "@/assets/images/product/aluminum-ingots/glance-3.webp";
-import glance4 from "@/assets/images/product/aluminum-ingots/glance-4.webp";
+import glance1 from "@/assets/images/product/aluminium-ingots/glance-1.webp";
+import glance2 from "@/assets/images/product/aluminium-ingots/glance-2.webp";
+import glance3 from "@/assets/images/product/aluminium-ingots/glance-3.webp";
+import glance4 from "@/assets/images/product/aluminium-ingots/glance-4.webp";
 
 interface GlanceSubPoint {
   heading: string;
@@ -29,17 +29,17 @@ interface GlanceItem {
 const glanceData: GlanceItem[] = [
   {
     index: 0,
-    heading: "Primary Aluminum Ingots (Virgin Aluminum)",
-    title: "Primary Aluminum Ingots (Virgin Aluminum",
+    heading: "Primary Aluminium Ingots (Virgin Aluminium)",
+    title: "Primary Aluminium Ingots (Virgin Aluminium",
     description:
-      "Pure aluminum produced directly from bauxite ore through electrolytic smelting in the Hall–Héroult process (where cryolite plays the essential role)",
+      "Pure aluminium produced directly from bauxite ore through electrolytic smelting in the Hall–Héroult process (where cryolite plays the essential role)",
     points: [
       {
         heading: "Specifications:",
         points: [
-          "Purity: 99.7% to 99.9% aluminum content",
+          "Purity: 99.7% to 99.9% aluminium content",
           "      Types:",
-          "Pure Ingots (1000-Series): Unalloyed aluminum; highest purity for specialized applications",
+          "Pure Ingots (1000-Series): Unalloyed aluminium; highest purity for specialized applications",
           "Alloy Ingots: AlSi, AlMg, AlCu series engineered for specific mechanical and thermal properties",
           "Weight Options: 1,000 lb (≈454 kg) standard ingots; custom sizes available",
           "Casting Methods: Direct chill (DC) casting (premium), continuous casting (high-volume), smelting",
@@ -66,15 +66,15 @@ const glanceData: GlanceItem[] = [
   },
   {
     index: 1,
-    heading: "Secondary Aluminum Ingots (Recycled Aluminum)",
-    title: "Secondary Aluminum Ingots (Recycled Aluminum)",
+    heading: "Secondary Aluminium Ingots (Recycled Aluminium)",
+    title: "Secondary Aluminium Ingots (Recycled Aluminium)",
     description:
-      "Aluminum recovered from scrap, waste, and end-of-life aluminum products, refined and recast into ingots for remanufacturing. Represents the circular economy solution to aluminum demand.",
+      "Aluminium recovered from scrap, waste, and end-of-life aluminium products, refined and recast into ingots for remanufacturing. Represents the circular economy solution to aluminium demand.",
     points: [
       {
         heading: "Specifications:",
         points: [
-          "Purity: 95% to 99.5% aluminum (varies by source and refining process)",
+          "Purity: 95% to 99.5% aluminium (varies by source and refining process)",
           "Composition: Often contains controlled alloy additions (Si, Cu, Mg) depending on intended application",
           "Certifications: ISO 9001, environmental certifications confirming responsible sourcing and processing",
           "Traceability: Full supply chain documentation available for compliance",
@@ -83,18 +83,18 @@ const glanceData: GlanceItem[] = [
       {
         heading: "Characteristics:",
         points: [
-          "Identical properties to primary aluminum once refined and processed",
-          "95% energy savings compared to primary aluminum production (environmental advantage)",
+          "Identical properties to primary aluminium once refined and processed",
+          "95% energy savings compared to primary aluminium production (environmental advantage)",
           "Lower production cost (approximately 25–35% less expensive than primary ingots)",
           "Supports corporate sustainability commitments and ESG targets",
-          "Emerging supply source as aluminum recycling infrastructure expands",
+          "Emerging supply source as aluminium recycling infrastructure expands",
         ],
       },
     ],
     glanceImage: glance2,
     why: "Sustainability Advantages:",
     whyPoints: [
-      "Diverts aluminum scrap from landfills",
+      "Diverts aluminium scrap from landfills",
       "Reduces carbon footprint by 95% compared to primary production",
       "Enables circular economy business models",
       "Qualifies companies for environmental certifications (ISO 14001, B Corp, etc.)",
@@ -106,7 +106,7 @@ const glanceData: GlanceItem[] = [
     heading: "High-Purity Specialized Ingots",
     title: "High-Purity Specialized Ingots",
     description:
-      "Ultra-refined aluminum (99.99%+) for applications demanding absolute material consistency and impurity-free composition.",
+      "Ultra-refined aluminium (99.99%+) for applications demanding absolute material consistency and impurity-free composition.",
     points: [
       {
         heading: "Specifications:",
@@ -121,7 +121,7 @@ const glanceData: GlanceItem[] = [
     glanceImage: glance3,
     why: "Sustainability Advantages:",
     whyPoints: [
-      "Diverts aluminum scrap from landfills",
+      "Diverts aluminium scrap from landfills",
       "Reduces carbon footprint by 95% compared to primary production",
       "Enables circular economy business models",
       "Qualifies companies for environmental certifications (ISO 14001, B Corp, etc.)",
@@ -130,15 +130,15 @@ const glanceData: GlanceItem[] = [
   },
   {
     index: 3,
-    heading: " Specialty Aluminum Alloy Ingots",
-    title: "Specialty Aluminum Alloy Ingots",
+    heading: " Specialty Aluminium Alloy Ingots",
+    title: "Specialty Aluminium Alloy Ingots",
     description:
-      "Engineered aluminum blended with specific elements (silicon, copper, magnesium) to achieve targeted mechanical and thermal properties.",
+      "Engineered aluminium blended with specific elements (silicon, copper, magnesium) to achieve targeted mechanical and thermal properties.",
     points: [
       {
         heading: "Common Alloy Series:",
         points: [
-          "AlSi Series (Aluminum-Silicon)",
+          "AlSi Series (Aluminium-Silicon)",
           "Composition: 4–12% silicon content",
           "Properties: Excellent castability, low thermal expansion, good wear resistance",
           "Applications: Engine blocks, pump bodies, precision castings",
@@ -146,7 +146,7 @@ const glanceData: GlanceItem[] = [
         ],
       },
       {
-        heading: "AlMg Series (Aluminum-Magnesium)",
+        heading: "AlMg Series (Aluminium-Magnesium)",
         points: [
           "Composition: 3–5% magnesium content",
           "Properties: High strength, superior corrosion resistance, excellent weldability",
@@ -155,7 +155,7 @@ const glanceData: GlanceItem[] = [
         ],
       },
       {
-        heading: "AlCu Series (Aluminum-Copper)",
+        heading: "AlCu Series (Aluminium-Copper)",
         points: [
           "Composition: 2–5% copper content",
           "Properties: Highest strength-to-weight ratio, excellent machinability, thermal conductivity",

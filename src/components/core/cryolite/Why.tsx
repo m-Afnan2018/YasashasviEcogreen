@@ -6,8 +6,8 @@ export default function Why() {
             <h2>Why Cryolite Matters</h2>
             <p>
                 Cryolite is indispensable to the Hall–Héroult process, the global
-                standard for aluminum production since 1886. Without cryolite,
-                extracting aluminum from its ore would be economically unfeasible.
+                standard for aluminium production since 1886. Without cryolite,
+                extracting aluminium from its ore would be economically unfeasible.
                 By dissolving alumina (Al<sub>2</sub>O<sub>3</sub>) and reducing its effective melting point
                 from over 2,000°C to approximately 950°C, cryolite enables cost-effective
             </p>

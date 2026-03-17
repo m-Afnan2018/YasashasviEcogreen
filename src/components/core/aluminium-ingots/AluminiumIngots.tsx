@@ -1,16 +1,16 @@
 'use client'
 
 import React, { useState } from "react";
-import styles from "./AluminumIngots.module.css";
+import styles from "./AluminiumIngots.module.css";
 import Link from "next/link";
-import heroImage from "@/assets/images/product/aluminum-ingots/hero-image.webp";
+import heroImage from "@/assets/images/product/aluminium-ingots/hero-image.webp";
 import SampleRequestPopup from "@/components/common/SampleRequestPopup/SampleRequestPopup";
 
-interface AluminumIngots {
+interface AluminiumIngots {
     backgroundImage?: string;
 }
 
-const AluminumIngots: React.FC<AluminumIngots> = ({
+const AluminiumIngots: React.FC<AluminiumIngots> = ({
     backgroundImage = `${heroImage.src}`,
 }) => {
     const [popupOpen, setPopupOpen] = useState(false);
@@ -44,10 +44,10 @@ const AluminumIngots: React.FC<AluminumIngots> = ({
                         </Link>
                     </nav>
 
-                    <h1 className={styles.title}>ALUMINUM INGOTS <br /> (RECYCLED)</h1>
+                    <h1 className={styles.title}>ALUMINIUM INGOTS <br /> (RECYCLED)</h1>
 
                     <p className={styles.description}>
-                        Sustainable High-Purity Aluminum for Industrial Manufacturing
+                        Aluminium ingots are cast forms of pure or alloyed aluminium produced by pouring molten aluminium into specialized molds. They serve as the foundational raw material for aluminium-dependent industries, enabling transformation into finished products ranging from aircraft fuselages to beverage cans. Ingots represent the critical link between primary aluminium production and manufacturing sectors worldwide.
                     </p>
 
                     <div className={styles.buttonGroup}>
@@ -105,4 +105,4 @@ const AluminumIngots: React.FC<AluminumIngots> = ({
     );
 };
 
-export default AluminumIngots;
+export default AluminiumIngots;

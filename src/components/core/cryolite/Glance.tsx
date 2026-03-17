@@ -69,7 +69,7 @@ const glanceData: GlanceItem[] = [
     heading: "CRYOLITE 5-20mm (Medium Grade)",
     title: "CRYOLITE 5-20mm (Medium Grade)",
     description:
-      "Application: Industrial flux and solvent for aluminum smelting and metallurgical processes",
+      "Application: Industrial flux and solvent for aluminium smelting and metallurgical processes",
     points: [
       {
         heading: "Specifications:",
@@ -84,10 +84,10 @@ const glanceData: GlanceItem[] = [
       {
         heading: "Primary Uses:",
         points: [
-          "Aluminum Electrolysis (Hall–Héroult process)",
+          "Aluminium Electrolysis (Hall–Héroult process)",
           "Non-Ferrous Metallurgy (alloys, magnesium reduction)",
           "Boiling Steel Production (deoxidizer & refining agent)",
-          "Chemical Synthesis (aluminum fluoride precursor)",
+          "Chemical Synthesis (aluminium fluoride precursor)",
           "Ceramic Kiln Processes (energy-efficient flux)",
         ],
       },
@@ -96,15 +96,15 @@ const glanceData: GlanceItem[] = [
         points: [
           "Improves electrical efficiency in electrolytic cells",
           "Minimizes fluorine losses and emissions",
-          "Increases aluminum yield per unit input",
-          "Optimal sodium-to-aluminum molecular ratio",
+          "Increases aluminium yield per unit input",
+          "Optimal sodium-to-aluminium molecular ratio",
           "Predictable smelting parameters",
         ],
       },
       {
         heading: "Industrial Specifications:",
         points: [
-          "Sodium-to-Aluminum ratio: Minimum 1.3:1",
+          "Sodium-to-Aluminium ratio: Minimum 1.3:1",
           "Silicon oxide: <0.5%",
           "Iron oxide: <0.3%",
           "Phosphorus pentoxide: <0.1%",
@@ -119,7 +119,7 @@ const glanceData: GlanceItem[] = [
     heading: "CRYOLITE 20-40mm (Coarse Industrial Grade)",
     title: "CRYOLITE 20-40mm (Coarse Industrial Grade)",
     description:
-      "Application: Bulk flux supply for large-scale aluminum smelting operations and foundries",
+      "Application: Bulk flux supply for large-scale aluminium smelting operations and foundries",
     points: [
       {
         heading: "Specifications:",
@@ -134,11 +134,11 @@ const glanceData: GlanceItem[] = [
       {
         heading: "Primary Uses:",
         points: [
-          "High-Volume Aluminum Smelting",
+          "High-Volume Aluminium Smelting",
           "Industrial Foundries",
           "Metallurgical R&D",
           "Bulk Continuous Smelting Operations",
-          "Secondary Aluminum Processing",
+          "Secondary Aluminium Processing",
         ],
       },
       {
@@ -184,7 +184,7 @@ const glanceData: GlanceItem[] = [
         heading: "Primary Uses:",
         points: [
           "Multi-department industrial supply",
-          "Aluminum smelting & secondary processing",
+          "Aluminium smelting & secondary processing",
           "Abrasive, glass & enamel manufacturing",
           "R&D sample testing",
           "Emergency replacement supply",
@@ -230,10 +230,10 @@ const glanceData: GlanceItem[] = [
       {
         heading: "Primary Uses:",
         points: [
-          "Large-scale aluminum smelting potlines",
+          "Large-scale aluminium smelting potlines",
           "Dust-restricted industrial environments",
           "Automated handling systems",
-          "Secondary aluminum processing",
+          "Secondary aluminium processing",
           "Ferroalloy & non-ferrous casting",
         ],
       },

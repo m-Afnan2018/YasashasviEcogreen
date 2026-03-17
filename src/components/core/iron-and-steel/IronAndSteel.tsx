@@ -46,13 +46,7 @@ const IronAndSteelHero: React.FC<IronAndSteelHeroProps> = ({
                     <h1 className={styles.title}>IRON & STEEL</h1>
 
                     <p className={styles.description}>
-                        Silicon Carbide is a synthetically manufactured compound of silicon
-                        and carbon (SiC) that has become the industry standard for
-                        high-performance applications requiring exceptional hardness,
-                        thermal stability, and chemical inertness. Unlike naturally
-                        occurring abrasives, industrial-grade SiC is engineered for
-                        consistency and precision, delivering predictable results across
-                        demanding applications.
+                        Our iron and steel product portfolio is designed to support modern infrastructure, manufacturing, and heavy engineering industries. We supply high-quality structural and processed steel materials that meet global industry standards. With consistent supply capability and specification-based sourcing, we help manufacturers achieve reliable production performance and long-term operational efficiency.
                     </p>
 
                     <div className={styles.buttonGroup}>

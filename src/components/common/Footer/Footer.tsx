@@ -28,7 +28,7 @@ const products: Products[] = [
     { label: 'Silicon Carbide', href: '/product/silicon-carbide' },
     { label: 'Cryolite', href: '/product/cryolite' },
     { label: 'Iron and Steel', href: '/product/iron-and-steel' },
-    { label: 'Aluminum Ingots', href: '/product/aluminum-ingots' },
+    { label: 'Aluminium Ingots', href: '/product/aluminium-ingots' },
     { label: 'Slag Scrap', href: '/product/slag-scrap' }
 ];
 

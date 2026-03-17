@@ -5,9 +5,9 @@ const productsData = [
         "product_family": {
             "name": "Sodium Hexafluoroaluminate (Cryolite)",
             "chemical_formula": "Na3AlF6",
-            "description": "Aluminum ingots are cast forms of pure or alloyed aluminum produced by pouring molten aluminum into specialized molds. They serve as the foundational raw material for aluminum-dependent industries, enabling transformation into finished products ranging from aircraft fuselages to beverage cans. Ingots represent the critical link between primary aluminum production and manufacturing sectors worldwide.",
+            "description": "Aluminium ingots are cast forms of pure or alloyed aluminium produced by pouring molten aluminium into specialized molds. They serve as the foundational raw material for aluminium-dependent industries, enabling transformation into finished products ranging from aircraft fuselages to beverage cans. Ingots represent the critical link between primary aluminium production and manufacturing sectors worldwide.",
             "physical_characteristics": {
-                "Chemical Composition": "Aluminum (Al): 99.5% – 99.9% (depending on grade)",
+                "Chemical Composition": "Aluminium (Al): 99.5% – 99.9% (depending on grade)",
                 "Crystal Structure": "Face-Centered Cubic (FCC) crystal structure enabling excellent ductility, formability, and conductivity",
                 "Appearance": "Silvery-white metallic solid with smooth and uniform surface finish",
                 "Density": "2.70 g/cm³ (lightweight metal with excellent strength-to-weight ratio)",
@@ -15,12 +15,12 @@ const productsData = [
                 "Electrical Conductivity": "Approximately 61% IACS (International Annealed Copper Standard), widely used in electrical applications",
                 "Coefficient of Thermal Expansion": "23.1 × 10⁻⁶ /°C (moderate dimensional expansion under temperature variations)",
                 "Melting Point": "660.3°C (relatively low melting temperature supporting efficient casting and remelting processes)",
-                "Corrosion Resistance": "Forms natural aluminum oxide protective layer preventing environmental corrosion and oxidation",
+                "Corrosion Resistance": "Forms natural aluminium oxide protective layer preventing environmental corrosion and oxidation",
                 "Mechanical Strength (Typical Range)": "Tensile Strength: 70 – 150 MPa (depending on alloy and processing) Yield Strength: 30 – 120 MPa",
                 "Recyclability": "100% recyclable without loss of properties, supporting sustainable and circular industrial applications"
             },
             "chemical_properties": null,
-            "why_it_matters": "Second Most Utilized Metal Globally: After iron, aluminum is the world's most widely used non-ferrous metal\nExceptional Properties: Lightweight (2.7 g/cm³), high strength-to-weight ratio, excellent electrical and thermal conductivity, superior corrosion resistance\nRecyclability: Infinitely recyclable without property degradation; recycled aluminum requires 95% less energy than primary production\nVersatility: Suitable for applications spanning aerospace to packaging, construction to consumer electronics\nSustainability Focus: Growing emphasis on secondary aluminum (recycled) ingots aligns with global ESG commitments",
+            "why_it_matters": "Second Most Utilized Metal Globally: After iron, aluminium is the world's most widely used non-ferrous metal\nExceptional Properties: Lightweight (2.7 g/cm³), high strength-to-weight ratio, excellent electrical and thermal conductivity, superior corrosion resistance\nRecyclability: Infinitely recyclable without property degradation; recycled aluminium requires 95% less energy than primary production\nVersatility: Suitable for applications spanning aerospace to packaging, construction to consumer electronics\nSustainability Focus: Growing emphasis on secondary aluminium (recycled) ingots aligns with global ESG commitments",
             "market_advantages": [
                 {
                     "title": "Strategic Sourcing",
@@ -101,7 +101,7 @@ const productsData = [
             {
                 "id": "cryolite-5-20mm",
                 "name": "CRYOLITE 5-20mm (Medium Grade)",
-                "application": "Industrial flux and solvent for aluminum smelting and metallurgical processes",
+                "application": "Industrial flux and solvent for aluminium smelting and metallurgical processes",
                 "specifications": {
                     "particle_size": "5–20 millimeters",
                     "purity": {
@@ -114,12 +114,12 @@ const productsData = [
                 },
                 "primary_uses": [
                     {
-                        "industry": "Primary Application - Aluminum Electrolysis",
+                        "industry": "Primary Application - Aluminium Electrolysis",
                         "description": "Acts as the essential flux in the Hall–Héroult process, dissolving alumina and lowering the melting point to approximately 950°C"
                     },
                     {
                         "industry": "Non-Ferrous Metallurgy",
-                        "description": "Used in the production of aluminum alloys, magnesium reduction, and specialized metal casting"
+                        "description": "Used in the production of aluminium alloys, magnesium reduction, and specialized metal casting"
                     },
                     {
                         "industry": "Boiling Steel Production",
@@ -127,7 +127,7 @@ const productsData = [
                     },
                     {
                         "industry": "Chemical Synthesis",
-                        "description": "Precursor for manufacturing aluminum fluoride and specialty chemicals"
+                        "description": "Precursor for manufacturing aluminium fluoride and specialty chemicals"
                     },
                     {
                         "industry": "Ceramic Kiln Processes",
@@ -137,14 +137,14 @@ const productsData = [
                 "performance_benefits": [
                     "Reduces current density in electrolytic cells, improving electrical efficiency",
                     "Minimizes fluorine losses and environmental emissions",
-                    "Increases overall aluminum yield per unit of input material",
-                    "Optimal sodium-to-aluminum molecular ratio for maximum efficiency",
+                    "Increases overall aluminium yield per unit of input material",
+                    "Optimal sodium-to-aluminium molecular ratio for maximum efficiency",
                     "Consistent quality ensures predictable smelting parameters"
                 ],
                 "industrial_specifications": {
-                    "description": "For aluminum smelting, strict quality requirements include:",
+                    "description": "For aluminium smelting, strict quality requirements include:",
                     "requirements": [
-                        "Sodium-to-Aluminum molecular ratio: Minimum 1.3:1 (higher ratios increase current efficiency)",
+                        "Sodium-to-Aluminium molecular ratio: Minimum 1.3:1 (higher ratios increase current efficiency)",
                         "Silicon oxide content: <0.5%",
                         "Iron oxide content: <0.3%",
                         "Phosphorus pentoxide: <0.1%",
@@ -156,7 +156,7 @@ const productsData = [
             {
                 "id": "cryolite-20-40mm",
                 "name": "CRYOLITE 20-40mm (Coarse Industrial Grade)",
-                "application": "Bulk flux supply for large-scale aluminum smelting operations and foundries",
+                "application": "Bulk flux supply for large-scale aluminium smelting operations and foundries",
                 "specifications": {
                     "particle_size": "20–40 millimeters",
                     "purity": {
@@ -169,7 +169,7 @@ const productsData = [
                 },
                 "primary_uses": [
                     {
-                        "industry": "High-Volume Aluminum Smelting",
+                        "industry": "High-Volume Aluminium Smelting",
                         "description": "Primary flux in large electrolytic cells and potlines"
                     },
                     {
@@ -186,7 +186,7 @@ const productsData = [
                     },
                     {
                         "industry": "Recycled Metal Processing",
-                        "description": "Used in secondary aluminum smelting to reduce impurities"
+                        "description": "Used in secondary aluminium smelting to reduce impurities"
                     }
                 ],
                 "performance_benefits": [
@@ -221,7 +221,7 @@ const productsData = [
                         "description": "Single SKU for companies utilizing cryolite across multiple departments"
                     },
                     {
-                        "industry": "Aluminum Smelting & Secondary Processing",
+                        "industry": "Aluminium Smelting & Secondary Processing",
                         "description": "Addresses varying cell sizes and operational requirements"
                     },
                     {
@@ -253,7 +253,7 @@ const productsData = [
                     "Pre-mixed blends available at customer specified ratios",
                     "Custom blending available upon request"
                 ],
-                "why_choose": "Ideal for diversified industrial companies that operate multiple aluminum smelting cells, grinding wheels, and enamel production lines. One versatile product eliminates procurement fragmentation and storage complexity while maintaining absolute quality consistency."
+                "why_choose": "Ideal for diversified industrial companies that operate multiple aluminium smelting cells, grinding wheels, and enamel production lines. One versatile product eliminates procurement fragmentation and storage complexity while maintaining absolute quality consistency."
             },
             {
                 "id": "cryolite-5-40mm",
@@ -273,7 +273,7 @@ const productsData = [
         "product_family": {
             "name": "IRON & STEEL",
             "chemical_formula": "Na3AlF6",
-            "description": "A critical industrial mineral and chemical compound composed of sodium, aluminum, and fluorine. Once mined exclusively in Greenland until 1987, cryolite is now produced synthetically through industrial processes, maintaining identical chemical composition and performance to natural reserves.",
+            "description": "A critical industrial mineral and chemical compound composed of sodium, aluminium, and fluorine. Once mined exclusively in Greenland until 1987, cryolite is now produced synthetically through industrial processes, maintaining identical chemical composition and performance to natural reserves.",
             "physical_characteristics": {
                 "chemical_formula": "Na3AlF6",
                 "molecular_weight": "209.94 g/mol",
@@ -290,7 +290,7 @@ const productsData = [
                 "Forms protective layers at high temperatures",
                 "Excellent thermal stability"
             ],
-            "why_it_matters": "Cryolite is indispensable to the Hall Héroult process, the global standard for aluminum production since 1886. Without cryolite, extracting aluminum from its ore would be economically unfeasible. By dissolving alumina (Al2O3) and reducing its effective melting point from over 2,000°C to approximately 950°C, cryolite enables cost-effective aluminum production.",
+            "why_it_matters": "Cryolite is indispensable to the Hall Héroult process, the global standard for aluminium production since 1886. Without cryolite, extracting aluminium from its ore would be economically unfeasible. By dissolving alumina (Al2O3) and reducing its effective melting point from over 2,000°C to approximately 950°C, cryolite enables cost-effective aluminium production.",
             "market_advantages": [
                 {
                     "title": "Strategic Sourcing",
@@ -371,7 +371,7 @@ const productsData = [
             {
                 "id": "cryolite-5-20mm",
                 "name": "CRYOLITE 5-20mm (Medium Grade)",
-                "application": "Industrial flux and solvent for aluminum smelting and metallurgical processes",
+                "application": "Industrial flux and solvent for aluminium smelting and metallurgical processes",
                 "specifications": {
                     "particle_size": "5–20 millimeters",
                     "purity": {
@@ -384,12 +384,12 @@ const productsData = [
                 },
                 "primary_uses": [
                     {
-                        "industry": "Primary Application - Aluminum Electrolysis",
+                        "industry": "Primary Application - Aluminium Electrolysis",
                         "description": "Acts as the essential flux in the Hall–Héroult process, dissolving alumina and lowering the melting point to approximately 950°C"
                     },
                     {
                         "industry": "Non-Ferrous Metallurgy",
-                        "description": "Used in the production of aluminum alloys, magnesium reduction, and specialized metal casting"
+                        "description": "Used in the production of aluminium alloys, magnesium reduction, and specialized metal casting"
                     },
                     {
                         "industry": "Boiling Steel Production",
@@ -397,7 +397,7 @@ const productsData = [
                     },
                     {
                         "industry": "Chemical Synthesis",
-                        "description": "Precursor for manufacturing aluminum fluoride and specialty chemicals"
+                        "description": "Precursor for manufacturing aluminium fluoride and specialty chemicals"
                     },
                     {
                         "industry": "Ceramic Kiln Processes",
@@ -407,14 +407,14 @@ const productsData = [
                 "performance_benefits": [
                     "Reduces current density in electrolytic cells, improving electrical efficiency",
                     "Minimizes fluorine losses and environmental emissions",
-                    "Increases overall aluminum yield per unit of input material",
-                    "Optimal sodium-to-aluminum molecular ratio for maximum efficiency",
+                    "Increases overall aluminium yield per unit of input material",
+                    "Optimal sodium-to-aluminium molecular ratio for maximum efficiency",
                     "Consistent quality ensures predictable smelting parameters"
                 ],
                 "industrial_specifications": {
-                    "description": "For aluminum smelting, strict quality requirements include:",
+                    "description": "For aluminium smelting, strict quality requirements include:",
                     "requirements": [
-                        "Sodium-to-Aluminum molecular ratio: Minimum 1.3:1 (higher ratios increase current efficiency)",
+                        "Sodium-to-Aluminium molecular ratio: Minimum 1.3:1 (higher ratios increase current efficiency)",
                         "Silicon oxide content: <0.5%",
                         "Iron oxide content: <0.3%",
                         "Phosphorus pentoxide: <0.1%",
@@ -426,7 +426,7 @@ const productsData = [
             {
                 "id": "cryolite-20-40mm",
                 "name": "CRYOLITE 20-40mm (Coarse Industrial Grade)",
-                "application": "Bulk flux supply for large-scale aluminum smelting operations and foundries",
+                "application": "Bulk flux supply for large-scale aluminium smelting operations and foundries",
                 "specifications": {
                     "particle_size": "20–40 millimeters",
                     "purity": {
@@ -439,7 +439,7 @@ const productsData = [
                 },
                 "primary_uses": [
                     {
-                        "industry": "High-Volume Aluminum Smelting",
+                        "industry": "High-Volume Aluminium Smelting",
                         "description": "Primary flux in large electrolytic cells and potlines"
                     },
                     {
@@ -456,7 +456,7 @@ const productsData = [
                     },
                     {
                         "industry": "Recycled Metal Processing",
-                        "description": "Used in secondary aluminum smelting to reduce impurities"
+                        "description": "Used in secondary aluminium smelting to reduce impurities"
                     }
                 ],
                 "performance_benefits": [
@@ -491,7 +491,7 @@ const productsData = [
                         "description": "Single SKU for companies utilizing cryolite across multiple departments"
                     },
                     {
-                        "industry": "Aluminum Smelting & Secondary Processing",
+                        "industry": "Aluminium Smelting & Secondary Processing",
                         "description": "Addresses varying cell sizes and operational requirements"
                     },
                     {
@@ -523,7 +523,7 @@ const productsData = [
                     "Pre-mixed blends available at customer specified ratios",
                     "Custom blending available upon request"
                 ],
-                "why_choose": "Ideal for diversified industrial companies that operate multiple aluminum smelting cells, grinding wheels, and enamel production lines. One versatile product eliminates procurement fragmentation and storage complexity while maintaining absolute quality consistency."
+                "why_choose": "Ideal for diversified industrial companies that operate multiple aluminium smelting cells, grinding wheels, and enamel production lines. One versatile product eliminates procurement fragmentation and storage complexity while maintaining absolute quality consistency."
             },
             {
                 "id": "cryolite-5-40mm",
@@ -543,7 +543,7 @@ const productsData = [
         "product_family": {
             "name": "Sodium Hexafluoroaluminate (Cryolite)",
             "chemical_formula": "Na3AlF6",
-            "description": "A critical industrial mineral and chemical compound composed of sodium, aluminum, and fluorine. Once mined exclusively in Greenland until 1987, cryolite is now produced synthetically through industrial processes, maintaining identical chemical composition and performance to natural reserves.",
+            "description": "A critical industrial mineral and chemical compound composed of sodium, aluminium, and fluorine. Once mined exclusively in Greenland until 1987, cryolite is now produced synthetically through industrial processes, maintaining identical chemical composition and performance to natural reserves.",
             "physical_characteristics": {
                 "chemical_formula": "Na3AlF6",
                 "molecular_weight": "209.94 g/mol",
@@ -560,7 +560,7 @@ const productsData = [
                 "Forms protective layers at high temperatures",
                 "Excellent thermal stability"
             ],
-            "why_it_matters": "Cryolite is indispensable to the Hall Héroult process, the global standard for aluminum production since 1886. Without cryolite, extracting aluminum from its ore would be economically unfeasible. By dissolving alumina (Al2O3) and reducing its effective melting point from over 2,000°C to approximately 950°C, cryolite enables cost-effective aluminum production.",
+            "why_it_matters": "Cryolite is indispensable to the Hall Héroult process, the global standard for aluminium production since 1886. Without cryolite, extracting aluminium from its ore would be economically unfeasible. By dissolving alumina (Al2O3) and reducing its effective melting point from over 2,000°C to approximately 950°C, cryolite enables cost-effective aluminium production.",
             "market_advantages": [
                 {
                     "title": "Strategic Sourcing",
@@ -641,7 +641,7 @@ const productsData = [
             {
                 "id": "cryolite-5-20mm",
                 "name": "CRYOLITE 5-20mm (Medium Grade)",
-                "application": "Industrial flux and solvent for aluminum smelting and metallurgical processes",
+                "application": "Industrial flux and solvent for aluminium smelting and metallurgical processes",
                 "specifications": {
                     "particle_size": "5–20 millimeters",
                     "purity": {
@@ -654,12 +654,12 @@ const productsData = [
                 },
                 "primary_uses": [
                     {
-                        "industry": "Primary Application - Aluminum Electrolysis",
+                        "industry": "Primary Application - Aluminium Electrolysis",
                         "description": "Acts as the essential flux in the Hall–Héroult process, dissolving alumina and lowering the melting point to approximately 950°C"
                     },
                     {
                         "industry": "Non-Ferrous Metallurgy",
-                        "description": "Used in the production of aluminum alloys, magnesium reduction, and specialized metal casting"
+                        "description": "Used in the production of aluminium alloys, magnesium reduction, and specialized metal casting"
                     },
                     {
                         "industry": "Boiling Steel Production",
@@ -667,7 +667,7 @@ const productsData = [
                     },
                     {
                         "industry": "Chemical Synthesis",
-                        "description": "Precursor for manufacturing aluminum fluoride and specialty chemicals"
+                        "description": "Precursor for manufacturing aluminium fluoride and specialty chemicals"
                     },
                     {
                         "industry": "Ceramic Kiln Processes",
@@ -677,14 +677,14 @@ const productsData = [
                 "performance_benefits": [
                     "Reduces current density in electrolytic cells, improving electrical efficiency",
                     "Minimizes fluorine losses and environmental emissions",
-                    "Increases overall aluminum yield per unit of input material",
-                    "Optimal sodium-to-aluminum molecular ratio for maximum efficiency",
+                    "Increases overall aluminium yield per unit of input material",
+                    "Optimal sodium-to-aluminium molecular ratio for maximum efficiency",
                     "Consistent quality ensures predictable smelting parameters"
                 ],
                 "industrial_specifications": {
-                    "description": "For aluminum smelting, strict quality requirements include:",
+                    "description": "For aluminium smelting, strict quality requirements include:",
                     "requirements": [
-                        "Sodium-to-Aluminum molecular ratio: Minimum 1.3:1 (higher ratios increase current efficiency)",
+                        "Sodium-to-Aluminium molecular ratio: Minimum 1.3:1 (higher ratios increase current efficiency)",
                         "Silicon oxide content: <0.5%",
                         "Iron oxide content: <0.3%",
                         "Phosphorus pentoxide: <0.1%",
@@ -696,7 +696,7 @@ const productsData = [
             {
                 "id": "cryolite-20-40mm",
                 "name": "CRYOLITE 20-40mm (Coarse Industrial Grade)",
-                "application": "Bulk flux supply for large-scale aluminum smelting operations and foundries",
+                "application": "Bulk flux supply for large-scale aluminium smelting operations and foundries",
                 "specifications": {
                     "particle_size": "20–40 millimeters",
                     "purity": {
@@ -709,7 +709,7 @@ const productsData = [
                 },
                 "primary_uses": [
                     {
-                        "industry": "High-Volume Aluminum Smelting",
+                        "industry": "High-Volume Aluminium Smelting",
                         "description": "Primary flux in large electrolytic cells and potlines"
                     },
                     {
@@ -726,7 +726,7 @@ const productsData = [
                     },
                     {
                         "industry": "Recycled Metal Processing",
-                        "description": "Used in secondary aluminum smelting to reduce impurities"
+                        "description": "Used in secondary aluminium smelting to reduce impurities"
                     }
                 ],
                 "performance_benefits": [
@@ -761,7 +761,7 @@ const productsData = [
                         "description": "Single SKU for companies utilizing cryolite across multiple departments"
                     },
                     {
-                        "industry": "Aluminum Smelting & Secondary Processing",
+                        "industry": "Aluminium Smelting & Secondary Processing",
                         "description": "Addresses varying cell sizes and operational requirements"
                     },
                     {
@@ -793,7 +793,7 @@ const productsData = [
                     "Pre-mixed blends available at customer specified ratios",
                     "Custom blending available upon request"
                 ],
-                "why_choose": "Ideal for diversified industrial companies that operate multiple aluminum smelting cells, grinding wheels, and enamel production lines. One versatile product eliminates procurement fragmentation and storage complexity while maintaining absolute quality consistency."
+                "why_choose": "Ideal for diversified industrial companies that operate multiple aluminium smelting cells, grinding wheels, and enamel production lines. One versatile product eliminates procurement fragmentation and storage complexity while maintaining absolute quality consistency."
             },
             {
                 "id": "cryolite-5-40mm",
@@ -813,7 +813,7 @@ const productsData = [
         "product_family": {
             "name": "Sodium Hexafluoroaluminate (Cryolite)",
             "chemical_formula": "Na3AlF6",
-            "description": "A critical industrial mineral and chemical compound composed of sodium, aluminum, and fluorine. Once mined exclusively in Greenland until 1987, cryolite is now produced synthetically through industrial processes, maintaining identical chemical composition and performance to natural reserves.",
+            "description": "A critical industrial mineral and chemical compound composed of sodium, aluminium, and fluorine. Once mined exclusively in Greenland until 1987, cryolite is now produced synthetically through industrial processes, maintaining identical chemical composition and performance to natural reserves.",
             "physical_characteristics": {
                 "chemical_formula": "Na3AlF6",
                 "molecular_weight": "209.94 g/mol",
@@ -830,7 +830,7 @@ const productsData = [
                 "Forms protective layers at high temperatures",
                 "Excellent thermal stability"
             ],
-            "why_it_matters": "Cryolite is indispensable to the Hall Héroult process, the global standard for aluminum production since 1886. Without cryolite, extracting aluminum from its ore would be economically unfeasible. By dissolving alumina (Al2O3) and reducing its effective melting point from over 2,000°C to approximately 950°C, cryolite enables cost-effective aluminum production.",
+            "why_it_matters": "Cryolite is indispensable to the Hall Héroult process, the global standard for aluminium production since 1886. Without cryolite, extracting aluminium from its ore would be economically unfeasible. By dissolving alumina (Al2O3) and reducing its effective melting point from over 2,000°C to approximately 950°C, cryolite enables cost-effective aluminium production.",
             "market_advantages": [
                 {
                     "title": "Strategic Sourcing",
@@ -911,7 +911,7 @@ const productsData = [
             {
                 "id": "cryolite-5-20mm",
                 "name": "CRYOLITE 5-20mm (Medium Grade)",
-                "application": "Industrial flux and solvent for aluminum smelting and metallurgical processes",
+                "application": "Industrial flux and solvent for aluminium smelting and metallurgical processes",
                 "specifications": {
                     "particle_size": "5–20 millimeters",
                     "purity": {
@@ -924,12 +924,12 @@ const productsData = [
                 },
                 "primary_uses": [
                     {
-                        "industry": "Primary Application - Aluminum Electrolysis",
+                        "industry": "Primary Application - Aluminium Electrolysis",
                         "description": "Acts as the essential flux in the Hall–Héroult process, dissolving alumina and lowering the melting point to approximately 950°C"
                     },
                     {
                         "industry": "Non-Ferrous Metallurgy",
-                        "description": "Used in the production of aluminum alloys, magnesium reduction, and specialized metal casting"
+                        "description": "Used in the production of aluminium alloys, magnesium reduction, and specialized metal casting"
                     },
                     {
                         "industry": "Boiling Steel Production",
@@ -937,7 +937,7 @@ const productsData = [
                     },
                     {
                         "industry": "Chemical Synthesis",
-                        "description": "Precursor for manufacturing aluminum fluoride and specialty chemicals"
+                        "description": "Precursor for manufacturing aluminium fluoride and specialty chemicals"
                     },
                     {
                         "industry": "Ceramic Kiln Processes",
@@ -947,14 +947,14 @@ const productsData = [
                 "performance_benefits": [
                     "Reduces current density in electrolytic cells, improving electrical efficiency",
                     "Minimizes fluorine losses and environmental emissions",
-                    "Increases overall aluminum yield per unit of input material",
-                    "Optimal sodium-to-aluminum molecular ratio for maximum efficiency",
+                    "Increases overall aluminium yield per unit of input material",
+                    "Optimal sodium-to-aluminium molecular ratio for maximum efficiency",
                     "Consistent quality ensures predictable smelting parameters"
                 ],
                 "industrial_specifications": {
-                    "description": "For aluminum smelting, strict quality requirements include:",
+                    "description": "For aluminium smelting, strict quality requirements include:",
                     "requirements": [
-                        "Sodium-to-Aluminum molecular ratio: Minimum 1.3:1 (higher ratios increase current efficiency)",
+                        "Sodium-to-Aluminium molecular ratio: Minimum 1.3:1 (higher ratios increase current efficiency)",
                         "Silicon oxide content: <0.5%",
                         "Iron oxide content: <0.3%",
                         "Phosphorus pentoxide: <0.1%",
@@ -966,7 +966,7 @@ const productsData = [
             {
                 "id": "cryolite-20-40mm",
                 "name": "CRYOLITE 20-40mm (Coarse Industrial Grade)",
-                "application": "Bulk flux supply for large-scale aluminum smelting operations and foundries",
+                "application": "Bulk flux supply for large-scale aluminium smelting operations and foundries",
                 "specifications": {
                     "particle_size": "20–40 millimeters",
                     "purity": {
@@ -979,7 +979,7 @@ const productsData = [
                 },
                 "primary_uses": [
                     {
-                        "industry": "High-Volume Aluminum Smelting",
+                        "industry": "High-Volume Aluminium Smelting",
                         "description": "Primary flux in large electrolytic cells and potlines"
                     },
                     {
@@ -996,7 +996,7 @@ const productsData = [
                     },
                     {
                         "industry": "Recycled Metal Processing",
-                        "description": "Used in secondary aluminum smelting to reduce impurities"
+                        "description": "Used in secondary aluminium smelting to reduce impurities"
                     }
                 ],
                 "performance_benefits": [
@@ -1031,7 +1031,7 @@ const productsData = [
                         "description": "Single SKU for companies utilizing cryolite across multiple departments"
                     },
                     {
-                        "industry": "Aluminum Smelting & Secondary Processing",
+                        "industry": "Aluminium Smelting & Secondary Processing",
                         "description": "Addresses varying cell sizes and operational requirements"
                     },
                     {
@@ -1063,7 +1063,7 @@ const productsData = [
                     "Pre-mixed blends available at customer specified ratios",
                     "Custom blending available upon request"
                 ],
-                "why_choose": "Ideal for diversified industrial companies that operate multiple aluminum smelting cells, grinding wheels, and enamel production lines. One versatile product eliminates procurement fragmentation and storage complexity while maintaining absolute quality consistency."
+                "why_choose": "Ideal for diversified industrial companies that operate multiple aluminium smelting cells, grinding wheels, and enamel production lines. One versatile product eliminates procurement fragmentation and storage complexity while maintaining absolute quality consistency."
             },
             {
                 "id": "cryolite-5-40mm",
@@ -1083,7 +1083,7 @@ const productsData = [
         "product_family": {
             "name": "Sodium Hexafluoroaluminate (Cryolite)",
             "chemical_formula": "Na3AlF6",
-            "description": "A critical industrial mineral and chemical compound composed of sodium, aluminum, and fluorine. Once mined exclusively in Greenland until 1987, cryolite is now produced synthetically through industrial processes, maintaining identical chemical composition and performance to natural reserves.",
+            "description": "A critical industrial mineral and chemical compound composed of sodium, aluminium, and fluorine. Once mined exclusively in Greenland until 1987, cryolite is now produced synthetically through industrial processes, maintaining identical chemical composition and performance to natural reserves.",
             "physical_characteristics": {
                 "chemical_formula": "Na3AlF6",
                 "molecular_weight": "209.94 g/mol",
@@ -1100,7 +1100,7 @@ const productsData = [
                 "Forms protective layers at high temperatures",
                 "Excellent thermal stability"
             ],
-            "why_it_matters": "Cryolite is indispensable to the Hall Héroult process, the global standard for aluminum production since 1886. Without cryolite, extracting aluminum from its ore would be economically unfeasible. By dissolving alumina (Al2O3) and reducing its effective melting point from over 2,000°C to approximately 950°C, cryolite enables cost-effective aluminum production.",
+            "why_it_matters": "Cryolite is indispensable to the Hall Héroult process, the global standard for aluminium production since 1886. Without cryolite, extracting aluminium from its ore would be economically unfeasible. By dissolving alumina (Al2O3) and reducing its effective melting point from over 2,000°C to approximately 950°C, cryolite enables cost-effective aluminium production.",
             "market_advantages": [
                 {
                     "title": "Strategic Sourcing",
@@ -1181,7 +1181,7 @@ const productsData = [
             {
                 "id": "cryolite-5-20mm",
                 "name": "CRYOLITE 5-20mm (Medium Grade)",
-                "application": "Industrial flux and solvent for aluminum smelting and metallurgical processes",
+                "application": "Industrial flux and solvent for aluminium smelting and metallurgical processes",
                 "specifications": {
                     "particle_size": "5–20 millimeters",
                     "purity": {
@@ -1194,12 +1194,12 @@ const productsData = [
                 },
                 "primary_uses": [
                     {
-                        "industry": "Primary Application - Aluminum Electrolysis",
+                        "industry": "Primary Application - Aluminium Electrolysis",
                         "description": "Acts as the essential flux in the Hall–Héroult process, dissolving alumina and lowering the melting point to approximately 950°C"
                     },
                     {
                         "industry": "Non-Ferrous Metallurgy",
-                        "description": "Used in the production of aluminum alloys, magnesium reduction, and specialized metal casting"
+                        "description": "Used in the production of aluminium alloys, magnesium reduction, and specialized metal casting"
                     },
                     {
                         "industry": "Boiling Steel Production",
@@ -1207,7 +1207,7 @@ const productsData = [
                     },
                     {
                         "industry": "Chemical Synthesis",
-                        "description": "Precursor for manufacturing aluminum fluoride and specialty chemicals"
+                        "description": "Precursor for manufacturing aluminium fluoride and specialty chemicals"
                     },
                     {
                         "industry": "Ceramic Kiln Processes",
@@ -1217,14 +1217,14 @@ const productsData = [
                 "performance_benefits": [
                     "Reduces current density in electrolytic cells, improving electrical efficiency",
                     "Minimizes fluorine losses and environmental emissions",
-                    "Increases overall aluminum yield per unit of input material",
-                    "Optimal sodium-to-aluminum molecular ratio for maximum efficiency",
+                    "Increases overall aluminium yield per unit of input material",
+                    "Optimal sodium-to-aluminium molecular ratio for maximum efficiency",
                     "Consistent quality ensures predictable smelting parameters"
                 ],
                 "industrial_specifications": {
-                    "description": "For aluminum smelting, strict quality requirements include:",
+                    "description": "For aluminium smelting, strict quality requirements include:",
                     "requirements": [
-                        "Sodium-to-Aluminum molecular ratio: Minimum 1.3:1 (higher ratios increase current efficiency)",
+                        "Sodium-to-Aluminium molecular ratio: Minimum 1.3:1 (higher ratios increase current efficiency)",
                         "Silicon oxide content: <0.5%",
                         "Iron oxide content: <0.3%",
                         "Phosphorus pentoxide: <0.1%",
@@ -1236,7 +1236,7 @@ const productsData = [
             {
                 "id": "cryolite-20-40mm",
                 "name": "CRYOLITE 20-40mm (Coarse Industrial Grade)",
-                "application": "Bulk flux supply for large-scale aluminum smelting operations and foundries",
+                "application": "Bulk flux supply for large-scale aluminium smelting operations and foundries",
                 "specifications": {
                     "particle_size": "20–40 millimeters",
                     "purity": {
@@ -1249,7 +1249,7 @@ const productsData = [
                 },
                 "primary_uses": [
                     {
-                        "industry": "High-Volume Aluminum Smelting",
+                        "industry": "High-Volume Aluminium Smelting",
                         "description": "Primary flux in large electrolytic cells and potlines"
                     },
                     {
@@ -1266,7 +1266,7 @@ const productsData = [
                     },
                     {
                         "industry": "Recycled Metal Processing",
-                        "description": "Used in secondary aluminum smelting to reduce impurities"
+                        "description": "Used in secondary aluminium smelting to reduce impurities"
                     }
                 ],
                 "performance_benefits": [
@@ -1301,7 +1301,7 @@ const productsData = [
                         "description": "Single SKU for companies utilizing cryolite across multiple departments"
                     },
                     {
-                        "industry": "Aluminum Smelting & Secondary Processing",
+                        "industry": "Aluminium Smelting & Secondary Processing",
                         "description": "Addresses varying cell sizes and operational requirements"
                     },
                     {
@@ -1333,7 +1333,7 @@ const productsData = [
                     "Pre-mixed blends available at customer specified ratios",
                     "Custom blending available upon request"
                 ],
-                "why_choose": "Ideal for diversified industrial companies that operate multiple aluminum smelting cells, grinding wheels, and enamel production lines. One versatile product eliminates procurement fragmentation and storage complexity while maintaining absolute quality consistency."
+                "why_choose": "Ideal for diversified industrial companies that operate multiple aluminium smelting cells, grinding wheels, and enamel production lines. One versatile product eliminates procurement fragmentation and storage complexity while maintaining absolute quality consistency."
             },
             {
                 "id": "cryolite-5-40mm",

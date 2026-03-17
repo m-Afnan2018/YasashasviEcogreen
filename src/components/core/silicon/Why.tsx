@@ -3,7 +3,7 @@ import styles from './Why.module.css'
 export default function Why() {
     return <section className={styles.Why}>
         <div className={styles.left}>
-            <h2>Why Aluminum is Strategically Important</h2>
+            <h2>Why Aluminium is Strategically Important</h2>
             <p>
                 Iron and steel form the foundation of modern infrastructure and industrial manufacturing due to their strength, reliability, and versatility. Their ability to support heavy engineering, structural construction, and precision manufacturing makes them one of the most widely used industrial materials worldwide.
             </p>

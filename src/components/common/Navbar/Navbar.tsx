@@ -11,7 +11,7 @@ const productLinks = [
     { name: "Silicon Carbide", href: "/product/silicon-carbide" },
     { name: "Iron and Steel", href: "/product/iron-and-steel" },
     { name: "Cryolite", href: "/product/cryolite" },
-    { name: "Aluminum Ingots", href: "/product/aluminum-ingots" },
+    { name: "Aluminium Ingots", href: "/product/aluminium-ingots" },
     { name: "Slag Scrap", href: "/product/slag-scrap" },
 ];
 

@@ -4,17 +4,17 @@ export default function Why() {
   return (
     <section className={styles.Why}>
       <div className={styles.left}>
-        <h2>Why Aluminum is Strategically Important</h2>
+        <h2>Why Aluminium is Strategically Important</h2>
         <p>
-          Second Most Utilized Metal Globally: After iron, aluminum is the
+          Second Most Utilized Metal Globally: After iron, aluminium is the
           world&apos;s most widely used non-ferrous metal Exceptional Properties:
           Lightweight (2.7 g/cm³), high strength-to-weight ratio, excellent
           electrical and thermal conductivity, superior corrosion resistance
           Recyclability: Infinitely recyclable without property degradation;
-          recycled aluminum requires 95% less energy than primary production
+          recycled aluminium requires 95% less energy than primary production
           Versatility: Suitable for applications spanning aerospace to
           packaging, construction to consumer electronics Sustainability Focus:
-          Growing emphasis on secondary aluminum (recycled) ingots aligns with
+          Growing emphasis on secondary aluminium (recycled) ingots aligns with
           global ESG commitments
         </p>
         {/* <h2>Physical Characteristics</h2> */}
@@ -27,14 +27,14 @@ export default function Why() {
       </div>
       <div className={styles.right}>
         <div className={styles.tableHeader}>
-          Chemical Properties – Aluminum Ingots
+          Chemical Properties – Aluminium Ingots
         </div>
         <table className={styles.propertiesTable}>
           <tbody>
             <tr>
               <td className={styles.labelCell}>Chemical Composition</td>
               <td className={styles.valueCell}>
-                Aluminum (Al): 99.5% – 99.9% (depending on grade)
+                Aluminium (Al): 99.5% – 99.9% (depending on grade)
               </td>
             </tr>
 
@@ -99,7 +99,7 @@ export default function Why() {
             <tr>
               <td className={styles.labelCell}>Corrosion Resistance</td>
               <td className={styles.valueCell}>
-                Forms natural aluminum oxide protective layer preventing
+                Forms natural aluminium oxide protective layer preventing
                 environmental corrosion and oxidation
               </td>
             </tr>

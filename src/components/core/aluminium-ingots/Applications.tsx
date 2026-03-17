@@ -3,13 +3,13 @@
 import { useState, useRef } from "react";
 import Image from "next/image";
 import styles from "./Applications.module.css";
-import application1 from "@/assets/images/product/aluminum-ingots/application-1.webp";
-import application2 from "@/assets/images/product/aluminum-ingots/application-2.webp";
-import application3 from "@/assets/images/product/aluminum-ingots/application-3.webp";
-import application4 from "@/assets/images/product/aluminum-ingots/application-4.webp";
-import application5 from "@/assets/images/product/aluminum-ingots/application-5.webp";
-import application6 from "@/assets/images/product/aluminum-ingots/application-6.webp";
-import application7 from "@/assets/images/product/aluminum-ingots/application-7.webp";
+import application1 from "@/assets/images/product/aluminium-ingots/application-1.webp";
+import application2 from "@/assets/images/product/aluminium-ingots/application-2.webp";
+import application3 from "@/assets/images/product/aluminium-ingots/application-3.webp";
+import application4 from "@/assets/images/product/aluminium-ingots/application-4.webp";
+import application5 from "@/assets/images/product/aluminium-ingots/application-5.webp";
+import application6 from "@/assets/images/product/aluminium-ingots/application-6.webp";
+// import application7 from "@/assets/images/product/aluminium-ingots/application-7.webp";
 // import applicationsData from "@/assets/data/applicationsData.json";
 
 const applicationsData = [
@@ -25,7 +25,7 @@ const applicationsData = [
       "Cockpit framing and interior structure",
       "Engine components exposed to high stress",
       "Radar and communication systems",
-      "Why Aluminum: Exceptional strength-to-weight ratio enables fuel efficiency and payload capacity",
+      "Why Aluminium: Exceptional strength-to-weight ratio enables fuel efficiency and payload capacity",
     ],
   },
   {
@@ -40,21 +40,21 @@ const applicationsData = [
       "Wheels and suspension components (AlMg alloys)",
       "Structural beams and frames (advanced alloys)",
       "Heat exchangers and radiators",
-      "Why Aluminum: Lightweight (improves fuel efficiency), corrosion-resistant, recyclable",
+      "Why Aluminium: Lightweight (improves fuel efficiency), corrosion-resistant, recyclable",
     ],
   },
   {
     id: "secondary",
-    label: "Commercial Grade / Secondary Aluminum",
-    title: "Packaging Industry (Commercial Grade / Secondary Aluminum)",
+    label: "Commercial Grade / Secondary Aluminium",
+    title: "Packaging Industry (Commercial Grade / Secondary Aluminium)",
     image: application3.src,
-    imageAlt: "Packaging Industry (Commercial Grade / Secondary Aluminum)",
+    imageAlt: "Packaging Industry (Commercial Grade / Secondary Aluminium)",
     points: [
-      "Beverage cans (recycled aluminum: ~50% of can material)",
+      "Beverage cans (recycled aluminium: ~50% of can material)",
       "Food packaging (foil, containers)",
       "Pharmaceutical packaging (requires food-grade purity)",
       "Aerosol containers",
-      "Why Aluminum: Lightweight, moisture-proof, infinitely recyclable, food-safe",
+      "Why Aluminium: Lightweight, moisture-proof, infinitely recyclable, food-safe",
     ],
   },
   {
@@ -69,7 +69,7 @@ const applicationsData = [
       "Structural beams and columns",
       "Roofing materials and gutters",
       "Interior framing and partitions",
-      "Why Aluminum: Corrosion-resistant, lightweight, aesthetic appeal, ease of fabrication",
+      "Why Aluminium: Corrosion-resistant, lightweight, aesthetic appeal, ease of fabrication",
     ],
   },
   {
@@ -83,38 +83,52 @@ const applicationsData = [
       "Electrical conductors and wiring",
       "Transformer cores",
       "Power distribution equipment",
-      "Why Aluminum: Excellent electrical conductivity (second only to copper), lower weight, cost advantage",
+      "Why Aluminium: Excellent electrical conductivity (second only to copper), lower weight, cost advantage",
     ],
   },
   {
     id: "industrialgrade",
-    label: "Premium & Industrial Grade",
-    title: "Consumer Appliances (Commercial Grade / Secondary Aluminum)",
+    label: "Commercial Grade / Secondary Aluminium",
+    title: "Consumer Appliances (Commercial Grade / Secondary Aluminium)",
     image: application6.src,
-    imageAlt: "Consumer Appliances (Commercial Grade / Secondary Aluminum)",
+    imageAlt: "Consumer Appliances (Commercial Grade / Secondary Aluminium)",
     points: [
       "Cookware and kitchen utensils",
       "Home appliances (refrigerator bodies, washing machine frames)",
       "HVAC systems",
       "Lighting fixtures",
-      "Why Aluminum: Thermal conductivity, corrosion resistance, affordability",
+      "Why Aluminium: Thermal conductivity, corrosion resistance, affordability",
     ],
   },
-  {
-    id: "secondaryaluminum",
-    label: "Commercial Grade / Secondary Aluminum",
-    title: "Electronics & Semiconductors (Premium Grade)",
-    image: application7.src,
-    imageAlt: "Electronics & Semiconductors (Premium Grade)",
-    points: [
-      "Computer heat sinks and thermal management",
-      "Device casing and enclosures",
-      "Circuit board components",
-      "LED substrate material",
-      "Semiconductor equipment",
-      "Why Aluminum: Thermal conductivity (dissipates heat efficiently), electrical properties, EMI shielding",
-    ],
-  },
+  // {
+  //   id: "industrialgrade",
+  //   label: "Premium & Industrial Grade",
+  //   title: "Consumer Appliances (Commercial Grade / Secondary Aluminium)",
+  //   image: application6.src,
+  //   imageAlt: "Consumer Appliances (Commercial Grade / Secondary Aluminium)",
+  //   points: [
+  //     "Cookware and kitchen utensils",
+  //     "Home appliances (refrigerator bodies, washing machine frames)",
+  //     "HVAC systems",
+  //     "Lighting fixtures",
+  //     "Why Aluminium: Thermal conductivity, corrosion resistance, affordability",
+  //   ],
+  // },
+  // {
+  //   id: "secondaryaluminum",
+  //   label: "Commercial Grade / Secondary Aluminium",
+  //   title: "Electronics & Semiconductors (Premium Grade)",
+  //   image: application7.src,
+  //   imageAlt: "Electronics & Semiconductors (Premium Grade)",
+  //   points: [
+  //     "Computer heat sinks and thermal management",
+  //     "Device casing and enclosures",
+  //     "Circuit board components",
+  //     "LED substrate material",
+  //     "Semiconductor equipment",
+  //     "Why Aluminium: Thermal conductivity (dissipates heat efficiently), electrical properties, EMI shielding",
+  //   ],
+  // },
 ];
 
 export default function Applications() {

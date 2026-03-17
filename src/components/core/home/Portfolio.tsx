@@ -30,9 +30,9 @@ export function Portfolio() {
     },
     {
       id: 4,
-      title: "Aluminum Ingots",
+      title: "Aluminium Ingots",
       image: aluminiumImage,
-      link: "aluminum-ingots",
+      link: "aluminium-ingots",
     },
     {
       id: 5,
@@ -51,7 +51,8 @@ export function Portfolio() {
           We trade and supply a focused range of high-demand industrial and
           metallurgical products, including:
         </h6>
-        <button className={styles.findSolutionBtn}>Find Your Solution →</button>
+        {/* <button className={styles.findSolutionBtn}>Find Your Solution →</button> */}
+        <a href="/contact-us" className={styles.findSolutionBtn}>Find Your Solution →</a>
       </div>
 
       <div className={styles.productsGrid}>

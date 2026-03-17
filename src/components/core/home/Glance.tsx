@@ -49,7 +49,7 @@ const glanceData: GlanceItem[] = [
         points: [
             "Sodium Cryolite",
             "Silicon Carbide",
-            "Aluminum Ingots",
+            "Aluminium Ingots",
             "Slag Scrap and other industrial materials"
         ],
         description: "This association enables us to offer manufacturing-backed trade reliability, consistent supply capability, and scalability for long-term contracts—strengthening buyer confidence across global markets.",

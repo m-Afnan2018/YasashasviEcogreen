@@ -25,7 +25,7 @@ const CryoliteHero: React.FC<CryoliteHeroProps> = ({
 
                     <p className={styles.description}>
                         {/* Cryolite (Na<sub>3</sub>AlF<sub>6</sub>), also known as sodium hexafluoroaluminate,
-                        is a critical industrial mineral and chemical compound composed of sodium, aluminum,
+                        is a critical industrial mineral and chemical compound composed of sodium, aluminium,
                         and fluorine. Once mined exclusively in Greenland until 1987, cryolite is now produced
                         synthetically through industrial processes, maintaining identical chemical composition
                         and performance to natural reserves. */}

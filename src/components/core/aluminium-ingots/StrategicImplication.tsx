@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./StrategicImplication.module.css";
 import Image from "next/image";
-import stradegy1 from "@/assets/images/product/aluminum-ingots/market-1.webp";
-import stradegy2 from "@/assets/images/product/aluminum-ingots/market-2.webp";
-import stradegy3 from "@/assets/images/product/aluminum-ingots/market-3.webp";
-import stradegy4 from "@/assets/images/product/aluminum-ingots/market-4.webp";
+import stradegy1 from "@/assets/images/product/aluminium-ingots/market-1.webp";
+import stradegy2 from "@/assets/images/product/aluminium-ingots/market-2.webp";
+import stradegy3 from "@/assets/images/product/aluminium-ingots/market-3.webp";
+import stradegy4 from "@/assets/images/product/aluminium-ingots/market-4.webp";
 
 interface ImplicationCardProps {
   image: string;
@@ -71,7 +71,7 @@ export default function StrategicImplication({
       alt: "Solar panel in automotive lightweighting setup",
       title: "International Standards",
       description:
-        " ASTM B26 (Aluminum Ingot Specifications), ISO 385 (Aluminum Metal Quality)",
+        " ASTM B26 (Aluminium Ingot Specifications), ISO 385 (Aluminium Metal Quality)",
       highlightText: "",
     },
     {

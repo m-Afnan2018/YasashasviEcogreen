@@ -23,7 +23,7 @@ export default function Why() {
       </div>
       <div className={styles.right}>
         <div className={styles.tableHeader}>
-          Chemical Properties – Iron & Steel Products
+          Chemical Properties – Silicon Carbide Products
         </div>
         <table className={styles.propertiesTable}>
           <tbody>

@@ -37,9 +37,9 @@ const products: Product[] = [
     title: "Cryolite (Sodium Cryolite)",
     image: cryoliteImage,
     description:
-      "High-quality sodium cryolite used in aluminum smelting and metallurgical industries.",
+      "High-quality sodium cryolite used in aluminium smelting and metallurgical industries.",
     applications: [
-      "Aluminum production",
+      "Aluminium production",
       "Flux in metallurgy",
       "Ceramics & glass industry",
     ],
@@ -60,7 +60,7 @@ const products: Product[] = [
   },
   {
     id: 3,
-    title: "Aluminum Ingots",
+    title: "Aluminium Ingots",
     image: aluminiumImage,
     description:
       "Pure aluminium ingots supplied for casting, extrusion and industrial usage.",
@@ -143,6 +143,7 @@ const ProductPortfolio: React.FC = () => {
               <h3 className={styles.cardTitle}>{product.title}</h3>
 
               <a
+                onClick={(e)=>e.stopPropagation()}
                 href={`/product/${product.link}`}
                 className={styles.exploreLink}
               >

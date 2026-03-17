@@ -31,7 +31,7 @@ export default function Why() {
       </div>
       <div className={styles.right}>
         <div className={styles.tableHeader}>
-          Chemical Properties – Iron & Steel Products
+          Chemical Properties – Slag Scrap
         </div>
         <table className={styles.propertiesTable}>
           <tbody>
@@ -39,7 +39,7 @@ export default function Why() {
               <td className={styles.labelCell}>Chemical Composition</td>
               <td className={styles.valueCell}>
                 Primarily contains Calcium Oxide (CaO), Silicon Dioxide (SiO₂),
-                Aluminum Oxide (Al₂O₃) and other metal oxides formed during
+                Aluminium Oxide (Al₂O₃) and other metal oxides formed during
                 metallurgical processing.
               </td>
             </tr>
