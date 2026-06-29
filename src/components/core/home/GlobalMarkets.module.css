@@ -218,8 +218,8 @@
 
 /* Marker Positions - Adjust these based on your map */
 .marker[data-location="middle-east"] {
-    top: 36%;
-    left: 24%;
+    top: 50%;
+    left: 50%;
 }
 
 .marker[data-location="asia"] {
@@ -233,8 +233,8 @@
 }
 
 .marker[data-location="international"] {
-    bottom: 30%;
-    right: 12%;
+    top: 34%;
+    left: 24%;
 }
 
 /* Pulse animation for markers */

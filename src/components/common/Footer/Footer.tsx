@@ -163,7 +163,7 @@ export default function Footer() {
             <div className={styles.footerBottom}>
                 <div className={styles.container}>
                     <div className={styles.bottomContent}>
-                        <p className={styles.copyright}>© 2026 Finixpa. All Rights Reserved</p>
+                        <p className={styles.copyright}>© 2026 Yasashvi. All Rights Reserved</p>
                         <p className={styles.designCredit}>
                             Design by <a href="https://ganesyx.com" target="_blank" rel="noopener noreferrer" className={styles.designLink}>Ganesyx</a>
                         </p>
