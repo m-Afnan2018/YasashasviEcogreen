@@ -38,6 +38,11 @@ export default function ContactSection() {
         />
         <input type="hidden" name="_captcha" value="false" />
         <input type="hidden" name="_template" value="table" />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://yasashviecogreen.com/thank-you"
+        />
 
         <input type="text" name="name" placeholder="Name" required />
         <input type="text" name="company" placeholder="Company Name" />

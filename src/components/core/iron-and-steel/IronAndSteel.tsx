@@ -5,6 +5,7 @@ import styles from "./IronAndSteel.module.css";
 import Link from "next/link";
 import heroImage from "@/assets/images/product/iron-and-steel/hero-image.webp";
 import SampleRequestPopup from "@/components/common/SampleRequestPopup/SampleRequestPopup";
+import GlassContactCard from "@/components/common/GlassContactCard/GlassContactCard";
 
 interface IronAndSteelHeroProps {
     backgroundImage?: string;
@@ -35,80 +36,88 @@ const IronAndSteelHero: React.FC<IronAndSteelHeroProps> = ({
         >
             <div className={styles.overlay}>
                 <div className={styles.container}>
-                    <nav className={styles.breadcrumb}>
-                        <Link href="/" className={styles.breadcrumbLink}>
-                            Home
-                        </Link>
-                        <span className={styles.breadcrumbSeparator}>›</span>
-                        <span className={styles.breadcrumbCurrent}>Product</span>
-                    </nav>
+                    <div className={styles.contentGrid}>
+                        <div className={styles.textColumn}>
+                            <nav className={styles.breadcrumb}>
+                                <Link href="/" className={styles.breadcrumbLink}>
+                                    Home
+                                </Link>
+                                <span className={styles.breadcrumbSeparator}>›</span>
+                                <span className={styles.breadcrumbCurrent}>Product</span>
+                            </nav>
 
-                    <h1 className={styles.title}>IRON & STEEL</h1>
+                            <h1 className={styles.title}>IRON & STEEL</h1>
 
-                    <p className={styles.description}>
-                        Our iron and steel product portfolio is designed to support modern infrastructure, manufacturing, and heavy engineering industries. We supply high-quality structural and processed steel materials that meet global industry standards. With consistent supply capability and specification-based sourcing, we help manufacturers achieve reliable production performance and long-term operational efficiency.
-                    </p>
+                            <p className={styles.description}>
+                                Our iron and steel product portfolio is designed to support modern infrastructure, manufacturing, and heavy engineering industries. We supply high-quality structural and processed steel materials that meet global industry standards. With consistent supply capability and specification-based sourcing, we help manufacturers achieve reliable production performance and long-term operational efficiency.
+                            </p>
 
-                    <div className={styles.buttonGroup}>
-                        {/* Ask For Sample — hidden after submission */}
-                        {!sampleRequested && (
-                            <button
-                                onClick={() => setPopupOpen(true)}
-                                className={`${styles.button} ${styles.buttonPrimary}`}
-                            >
-                                <svg
-                                    className={styles.buttonIcon}
-                                    viewBox="0 0 20 20"
-                                    fill="currentColor"
-                                    xmlns="http://www.w3.org/2000/svg"
+                            <div className={styles.buttonGroup}>
+                                {/* Ask For Sample — hidden after submission */}
+                                {!sampleRequested && (
+                                    <button
+                                        onClick={() => setPopupOpen(true)}
+                                        className={`${styles.button} ${styles.buttonPrimary}`}
+                                    >
+                                        {/*<svg
+                                            className={styles.buttonIcon}
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                fillRule="evenodd"
+                                                d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                                                clipRule="evenodd"
+                                            />
+                                        </svg>*/}
+                                        Ask For Sample
+                                    </button>
+                                )}
+                                {/* <a
+                                    href="/files/yasashvi-ecogreen-company-profile.pdf"
+                                    download={true}
+                                    className={`${styles.button} ${styles.buttonPrimary}`}
                                 >
-                                    <path
-                                        fillRule="evenodd"
-                                        d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
-                                        clipRule="evenodd"
-                                    />
-                                </svg>
-                                Ask For Sample
-                            </button>
-                        )}
-                        {/* <a
-                            href="/files/yasashvi-ecogreen-company-profile.pdf"
-                            download={true}
-                            className={`${styles.button} ${styles.buttonPrimary}`}
-                        >
-                            <svg
-                                className={styles.buttonIcon}
-                                viewBox="0 0 20 20"
-                                fill="currentColor"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    fillRule="evenodd"
-                                    d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
-                                    clipRule="evenodd"
-                                />
-                            </svg>
-                            Ask For Sample
-                        </a> */}
-                        <a
-                            href="/files/yasashvi-ecogreen-company-profile.pdf"
-                            download={true}
-                            className={`${styles.button} ${styles.buttonSecondary}`}
-                        >
-                            <svg
-                                className={styles.buttonIcon}
-                                viewBox="0 0 20 20"
-                                fill="currentColor"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    fillRule="evenodd"
-                                    d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
-                                    clipRule="evenodd"
-                                />
-                            </svg>
-                            Download Brouchure
-                        </a>
+                                    <svg
+                                        className={styles.buttonIcon}
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            fillRule="evenodd"
+                                            d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                                            clipRule="evenodd"
+                                        />
+                                    </svg>
+                                    Ask For Sample
+                                </a> */}
+                                <a
+                                    href="/files/yasashvi-ecogreen-company-profile.pdf"
+                                    download={true}
+                                    className={`${styles.button} ${styles.buttonSecondary}`}
+                                >
+                                    <svg
+                                        className={styles.buttonIcon}
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            fillRule="evenodd"
+                                            d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                                            clipRule="evenodd"
+                                        />
+                                    </svg>
+                                    Download Brouchure
+                                </a>
+                            </div>
+                        </div>
+
+                        <div className={styles.formColumn}>
+                            <GlassContactCard productName="Iron and Steel" />
+                        </div>
                     </div>
                 </div>
             </div>

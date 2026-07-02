@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import styles from "./SampleRequestPopup.module.css";
 
 interface SampleRequestPopupProps {
@@ -18,14 +19,13 @@ const SampleRequestPopup: React.FC<SampleRequestPopupProps> = ({
   productName = "Product",
   formSubmitEmail = "your@email.com", // replace with your actual email
 }) => {
-  const [submitted, setSubmitted] = useState(false);
+  const router = useRouter();
   const [isClosing, setIsClosing] = useState(false);
 
   // Lock body scroll when popup is open
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
-      setSubmitted(false);
       setIsClosing(false);
     } else {
       document.body.style.overflow = "";
@@ -58,13 +58,13 @@ const SampleRequestPopup: React.FC<SampleRequestPopupProps> = ({
       body: formData,
     })
       .then(() => {
-        setSubmitted(true);
         onSuccess?.();
+        router.push("/thank-you");
       })
       .catch(() => {
-        // Even on network error, show success (formsubmit may block CORS but still deliver)
-        setSubmitted(true);
+        // Even on network error, treat as delivered (formsubmit may block CORS but still deliver)
         onSuccess?.();
+        router.push("/thank-you");
       });
   };
 
@@ -108,37 +108,7 @@ const SampleRequestPopup: React.FC<SampleRequestPopupProps> = ({
 
         {/* Body */}
         <div className={styles.body}>
-          {submitted ? (
-            <div className={styles.successState}>
-              <div className={styles.successIcon}>
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-              </div>
-              <h3 className={styles.successTitle}>
-                Request Sent!
-              </h3>
-              <p className={styles.successMessage}>
-                Thank you for your interest in{" "}
-                <strong>{productName}</strong>. Our team will
-                get back to you shortly with sample details.
-              </p>
-              <button
-                className={styles.doneBtn}
-                onClick={handleClose}
-              >
-                Done
-              </button>
-            </div>
-          ) : (
-            <form className={styles.form} onSubmit={handleSubmit}>
+          <form className={styles.form} onSubmit={handleSubmit}>
               {/* Hidden formsubmit config fields */}
               <input
                 type="hidden"
@@ -348,7 +318,7 @@ const SampleRequestPopup: React.FC<SampleRequestPopupProps> = ({
               </div>
 
               <button type="submit" className={styles.submitBtn}>
-                <svg
+                {/*<svg
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
@@ -358,11 +328,10 @@ const SampleRequestPopup: React.FC<SampleRequestPopupProps> = ({
                     d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
                     clipRule="evenodd"
                   />
-                </svg>
+                </svg>*/}
                 Submit Request
               </button>
-            </form>
-          )}
+          </form>
         </div>
       </div>
     </div>

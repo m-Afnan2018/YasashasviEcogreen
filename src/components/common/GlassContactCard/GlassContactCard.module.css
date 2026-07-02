@@ -1,0 +1,250 @@
+/* Glassmorphic inline contact card — tuned to stay legible over any hero image */
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  background: rgba(12, 16, 12, 0.55);
+  backdrop-filter: blur(20px) saturate(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}
+
+/* Browsers without backdrop-filter support get a solid, still-legible panel */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .card {
+    background: rgba(10, 14, 10, 0.88);
+  }
+}
+
+/* Users who've asked for higher contrast get a near-opaque panel + stronger border */
+@media (prefers-contrast: more) {
+  .card {
+    background: rgba(6, 10, 6, 0.92);
+    border-color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #9ed86a;
+  font-family: var(--font-pilat, sans-serif);
+  margin-bottom: 8px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 6px;
+  line-height: 1.2;
+  letter-spacing: -0.2px;
+  font-family: var(--font-pilat, sans-serif);
+  text-align: left;
+}
+
+.subtitle {
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+  font-family: var(--font-dmsans, sans-serif);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.fieldLabel {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.92);
+  font-family: var(--font-pilat, sans-serif);
+  letter-spacing: 0.01em;
+}
+
+.required {
+  color: #ff8a80;
+}
+
+.input,
+.select {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+  font-family: var(--font-pilat, sans-serif);
+  box-sizing: border-box;
+}
+
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.input:focus,
+.select:focus {
+  border-color: #9ed86a;
+  background: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 0 0 3px rgba(158, 216, 106, 0.25);
+}
+
+.selectWrapper {
+  position: relative;
+}
+
+.select {
+  padding-right: 40px;
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.select option {
+  color: #1a1a1a;
+  background: #ffffff;
+}
+
+.selectArrow {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+}
+
+.selectArrow svg {
+  width: 16px;
+  height: 16px;
+}
+
+.submitBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 13px 24px;
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #7cb342;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  font-family: var(--font-pilat, sans-serif);
+  letter-spacing: 0.02em;
+  box-shadow: 0 2px 10px rgba(124, 179, 66, 0.45);
+}
+
+.submitBtn:hover:not(:disabled) {
+  background: #689f38;
+  box-shadow: 0 4px 16px rgba(124, 179, 66, 0.55);
+  transform: translateY(-1px);
+}
+
+.submitBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Success state */
+.successState {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.successIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(158, 216, 106, 0.2);
+  border: 2px solid #9ed86a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  color: #9ed86a;
+}
+
+.successIcon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.successTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 10px;
+  font-family: var(--font-pilat, sans-serif);
+}
+
+.successMessage {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.88);
+  margin: 0;
+  font-family: var(--font-dmsans, sans-serif);
+}
+
+.successMessage strong {
+  color: #ffffff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .input,
+  .select,
+  .submitBtn {
+    transition: none;
+  }
+
+  .submitBtn:hover:not(:disabled) {
+    transform: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card {
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 22px;
+  }
+
+  .title {
+    font-size: 19px;
+  }
+}
