@@ -1,8 +1,9 @@
-import { useEffect, useState, type ChangeEvent, type FormEvent } from "react";
+import { useEffect, useState, type ChangeEvent, type ClipboardEvent, type FormEvent } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import MDEditor from "@uiw/react-md-editor";
 import { ArrowLeft, ImagePlus, AlertCircle, X, Copy, ChevronDown, ChevronUp } from "lucide-react";
 import { api, assetUrl, type Blog } from "../api/client";
+import { markdownFromClipboard } from "../utils/wordPaste";
 import styles from "./BlogEditor.module.css";
 
 const emptyForm = {
@@ -105,6 +106,23 @@ export default function BlogEditor() {
     } finally {
       setSaving(false);
     }
+  }
+
+  function handleContentPaste(e: ClipboardEvent<HTMLTextAreaElement>) {
+    const markdown = markdownFromClipboard(e.clipboardData);
+    if (!markdown) return; // no HTML flavor on the clipboard, let the default plain-text paste happen
+
+    e.preventDefault();
+    const textarea = e.target as HTMLTextAreaElement;
+    const start = textarea.selectionStart;
+    const end = textarea.selectionEnd;
+    const next = form.content.slice(0, start) + markdown + form.content.slice(end);
+    update("content", next);
+
+    const cursor = start + markdown.length;
+    requestAnimationFrame(() => {
+      textarea.selectionStart = textarea.selectionEnd = cursor;
+    });
   }
 
   async function handleDuplicate() {
@@ -305,6 +323,7 @@ export default function BlogEditor() {
             onChange={(value) => update("content", value ?? "")}
             height={480}
             preview="live"
+            textareaProps={{ onPaste: handleContentPaste }}
           />
         </div>
       </div>
