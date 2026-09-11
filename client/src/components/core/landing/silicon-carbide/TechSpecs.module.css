@@ -1,0 +1,128 @@
+.section {
+  background: #ffffff;
+  padding: 80px 40px;
+}
+
+.inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: var(--font-pilat);
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-align: center;
+  margin: 0 0 32px 0;
+}
+
+.highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+}
+
+.highlightItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-dmsans);
+  font-size: 14px;
+  font-weight: 600;
+  color: #2a2a2a;
+}
+
+.checkmark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #7cb342;
+  color: #ffffff;
+  font-size: 11px;
+  flex-shrink: 0;
+}
+
+.tableWrap {
+  border-radius: 8px;
+  overflow: hidden;
+  overflow-x: auto;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.table {
+  width: 100%;
+  min-width: 480px;
+  border-collapse: collapse;
+  background: #ffffff;
+}
+
+.th {
+  background: #7cb342;
+  color: #ffffff;
+  font-family: var(--font-pilat);
+  font-size: 14px;
+  font-weight: 700;
+  text-align: left;
+  padding: 16px 24px;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.labelCell {
+  font-family: var(--font-pilat);
+  font-size: 14px;
+  font-weight: 600;
+  color: #2a2a2a;
+  padding: 16px 24px;
+  background: #f9f9f9;
+  border-right: 1px solid #e8e8e8;
+  vertical-align: top;
+}
+
+.valueCell {
+  font-family: var(--font-dmsans);
+  font-size: 14px;
+  color: #4a4a4a;
+  padding: 16px 24px;
+  line-height: 1.6;
+  vertical-align: top;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 20px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .th,
+  .labelCell,
+  .valueCell {
+    padding: 12px 16px;
+    font-size: 13px;
+  }
+
+  .highlights {
+    gap: 10px 18px;
+  }
+
+  .highlightItem {
+    font-size: 13px;
+  }
+}

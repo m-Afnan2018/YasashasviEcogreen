@@ -1,0 +1,80 @@
+.footer {
+  background: #141b1f;
+  color: #ffffff;
+  padding: 48px 24px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding-bottom: 32px;
+}
+
+.brand {
+  max-width: 420px;
+}
+
+.logo {
+  width: 170px;
+  height: 44px;
+  object-fit: cover;
+  filter: contrast(0) brightness(1.5);
+  margin-bottom: 16px;
+}
+
+.tagline {
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: var(--font-dmsans);
+}
+
+.contactItems {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contactLink {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  font-family: var(--font-dmsans);
+  transition: color 0.2s ease;
+}
+
+.contactLink:hover {
+  color: #8bc34a;
+}
+
+.icon {
+  color: #7cb342;
+  flex-shrink: 0;
+}
+
+.bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.bottom p {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: var(--font-dmsans);
+}
+
+@media (max-width: 640px) {
+  .container {
+    flex-direction: column;
+    gap: 28px;
+  }
+}

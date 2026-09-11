@@ -1,0 +1,159 @@
+.section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 40px;
+}
+
+.sectionHead {
+  max-width: 640px;
+  margin: 0 auto 56px auto;
+  text-align: center;
+}
+
+.eyebrow {
+  font-family: var(--font-dmsans);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #7cb342;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 14px 0;
+}
+
+.eyebrow::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 1px;
+  background: #7cb342;
+  flex-shrink: 0;
+}
+
+.heading {
+  font-family: var(--font-pilat);
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.2;
+  margin: 0 0 14px 0;
+}
+
+.description {
+  font-family: var(--font-dmsans);
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: #4a4a4a;
+  margin: 0;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 34px;
+}
+
+.step {
+  position: relative;
+  background: #f9faf7;
+  border: 1px solid #eef1ea;
+  border-left: 3px solid #7cb342;
+  border-radius: 10px;
+  padding: 26px 22px 24px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.step:hover {
+  background: #ffffff;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.step:not(:last-child)::after {
+  content: "\2192";
+  position: absolute;
+  top: 32px;
+  right: -29px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7cb342;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  z-index: 2;
+}
+
+.numberBadge {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #1a1a1a;
+  color: #ffffff;
+  font-family: var(--font-pilat);
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.stepTitle {
+  font-family: var(--font-pilat);
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.35;
+  margin: 0 0 10px 0;
+}
+
+.stepDescription {
+  font-family: var(--font-dmsans);
+  font-size: 13.5px;
+  line-height: 1.65;
+  color: #4a4a4a;
+  margin: 0;
+}
+
+@media (max-width: 1100px) {
+  .steps {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+
+  .step:not(:last-child)::after {
+    content: "\2193";
+    top: auto;
+    right: auto;
+    bottom: -38px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 20px;
+  }
+
+  .heading {
+    font-size: 26px;
+  }
+
+  .sectionHead {
+    margin-bottom: 40px;
+  }
+
+  .steps {
+    gap: 40px;
+  }
+
+  .step:not(:last-child)::after {
+    bottom: -34px;
+  }
+}

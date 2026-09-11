@@ -1,0 +1,52 @@
+services:
+  mongo:
+    image: mongo:7
+    restart: unless-stopped
+    volumes:
+      - mongo_data:/data/db
+
+  backend:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    env_file:
+      - ./server/.env
+    environment:
+      - MONGODB_URI=mongodb://mongo:27017/ecogreen
+      - ADMIN_ORIGINS=https://admin.yasashviecogreen.com
+      - CORS_ORIGINS=https://yasashviecogreen.com
+    volumes:
+      - uploads_data:/app/uploads
+    depends_on:
+      - mongo
+
+  admin:
+    build:
+      context: ./admin
+      dockerfile: Dockerfile
+      args:
+        VITE_API_URL: https://admin.yasashviecogreen.com
+    restart: unless-stopped
+    ports:
+      - "4000:4000"
+    depends_on:
+      - backend
+
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_API_URL: https://admin.yasashviecogreen.com
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+volumes:
+  mongo_data:
+  uploads_data:

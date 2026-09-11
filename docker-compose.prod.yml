@@ -1,0 +1,66 @@
+# Production stack: pulls pre-built images from GHCR (see Makefile) instead of
+# building locally. Run with:
+#   docker compose -f docker-compose.prod.yml --env-file .env.prod up -d
+#
+# Copy .env.prod.example -> .env.prod and fill in real values first. Required
+# vars (JWT_SECRET, ADMIN_EMAIL, ADMIN_PASSWORD, CORS_ORIGINS, ADMIN_ORIGINS,
+# SITE_URL) have no insecure defaults here - compose will refuse to start
+# without them.
+#
+# IMPORTANT - two things that are easy to get wrong:
+# 1. NEXT_PUBLIC_API_URL / VITE_API_URL are baked into the client/admin images
+#    at BUILD time (see Makefile), not read at container startup. Setting
+#    them here does nothing - rebuild and push with the right values instead:
+#      make release NEXT_PUBLIC_API_URL=https://api.yourdomain.com VITE_API_URL=https://admin-api.yourdomain.com
+# 2. The admin login cookie is marked Secure when NODE_ENV=production, so it
+#    will NOT be sent over plain HTTP. Put this stack behind a reverse proxy
+#    that terminates HTTPS (nginx, Caddy, Traefik) before exposing it
+#    publicly, or admin login will silently fail.
+
+services:
+  mongo:
+    image: mongo:7
+    restart: unless-stopped
+    volumes:
+      - mongo_data:/data/db
+
+  backend:
+    image: ${REGISTRY:-ghcr.io}/${OWNER:-m-afnan2018}/${NAME:-yasashvi-ecogreen}-backend:${TAG:-latest}
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    environment:
+      NODE_ENV: production
+      PORT: 5000
+      MONGODB_URI: ${MONGODB_URI:-mongodb://mongo:27017/ecogreen}
+      JWT_SECRET: ${JWT_SECRET:?Set JWT_SECRET in .env.prod - a long random string}
+      JWT_EXPIRES_IN: ${JWT_EXPIRES_IN:-7d}
+      ADMIN_EMAIL: ${ADMIN_EMAIL:?Set ADMIN_EMAIL in .env.prod}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:?Set ADMIN_PASSWORD in .env.prod}
+      CORS_ORIGINS: ${CORS_ORIGINS:?Set CORS_ORIGINS in .env.prod, e.g. https://yourdomain.com}
+      ADMIN_ORIGINS: ${ADMIN_ORIGINS:?Set ADMIN_ORIGINS in .env.prod, e.g. https://admin.yourdomain.com}
+      SITE_URL: ${SITE_URL:?Set SITE_URL in .env.prod, e.g. https://yourdomain.com}
+    volumes:
+      - uploads_data:/app/uploads
+    depends_on:
+      - mongo
+
+  admin:
+    image: ${REGISTRY:-ghcr.io}/${OWNER:-m-afnan2018}/${NAME:-yasashvi-ecogreen}-admin:${TAG:-latest}
+    restart: unless-stopped
+    ports:
+      - "4000:4000"
+    depends_on:
+      - backend
+
+  client:
+    image: ${REGISTRY:-ghcr.io}/${OWNER:-m-afnan2018}/${NAME:-yasashvi-ecogreen}-client:${TAG:-latest}
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+volumes:
+  mongo_data:
+  uploads_data:
